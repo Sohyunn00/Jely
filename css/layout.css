@@ -210,7 +210,8 @@ main .main_visual {
   background-size: cover;
   background-position: center;
   position: absolute;
-  left: calc(50% - 250px);
+  left: calc(50% - 260px);
+  z-index: 2;
 }
 .main_visual .con {
   width: 100%;
@@ -226,10 +227,11 @@ main .main_visual {
   z-index: 10;
 }
 .main_visual .con .genre_wrap {
-  width: fit-content;
+  width: 36%;
   height: fit-content;
   display: flex;
-  gap: 30px;
+  gap: 18px;
+  justify-content: center;
   align-items: center;
   position: absolute;
   right: 0px;
@@ -502,4 +504,87 @@ main .main_visual {
 .mood_coffee .mood_element:hover {
   background-color: #e76616;
   border-radius: 90px;
+}
+.sec3 .con{
+  width: 1340px;
+  height: fit-content;
+  margin: 80px auto;
+}
+.sec3 .con .anime_top{
+  width: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.sec3 .con .anime_top h3{
+  width: 200px;
+  font-size: 26px;
+  cursor: default
+}
+.sec3 .con .anime_top div{
+  width: 1140px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.sec3 .con .anime_bottom{
+  width: 100%;
+  height: fit-content;
+  margin: 80px 0;
+}
+.sec3 .con .anime_bottom > div{
+  width: 1020px;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.anime_bottom .bottom_text{
+  width: fit-content;
+  height: fit-content;
+}
+.anime_bottom p{
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 60px;
+  cursor: default;
+}
+
+.anime_bottom img{
+  width: 480px;
+  height: auto;
+  transition: 0.5s;
+  opacity: 90%;
+}
+.anime_bottom .anime1 p::before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #2694CE;
+  border-radius: 8px;
+  margin-right: 18px;
+}
+.anime_bottom .anime2 p::before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #DA3D3E;
+  border-radius: 8px;
+  margin-right: 18px;
+}
+.anime_bottom .anime3 p::before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #9C9C9C;
+  border-radius: 8px;
+  margin-right: 18px;
+}
+.anime_bottom a:hover img{
+  filter: invert(90%);
+  /* filter: hue-rotate(180deg); */
 }
