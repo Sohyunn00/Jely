@@ -585,6 +585,4 @@ main .main_visual {
   margin-right: 18px;
 }
 .anime_bottom a:hover img{
-  filter: invert(90%);
-  /* filter: hue-rotate(180deg); */
-}
+  filter: invert(90%);}
