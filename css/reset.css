@@ -130,6 +130,7 @@ table {
 img {
   display: block;
   border: none;
+  max-width: 100%;
 }
 a {
   text-decoration: none;
