@@ -530,6 +530,7 @@ main .main_visual {
   width: 1340px;
   height: fit-content;
   margin: 80px auto;
+  margin-bottom: 300px;
 }
 .con .text_title {
   width: 100%;
@@ -604,13 +605,13 @@ main .main_visual {
   border-radius: 8px;
   margin-right: 18px;
 }
-.anime1 > a:hover img{
+.anime1 > a:hover img {
   filter: hue-rotate(180deg);
 }
-.anime2 > a:hover img{
+.anime2 > a:hover img {
   filter: hue-rotate(180deg);
 }
-.anime3 a:last-of-type:hover img{
+.anime3 a:last-of-type:hover img {
   filter: invert(80%);
 }
 
@@ -647,7 +648,7 @@ main .main_visual {
   position: relative;
   z-index: 1;
 }
-:is(.artist2, .artist3) .text_box{
+:is(.artist2, .artist3) .text_box {
   border-top: none;
 }
 .artist_box > div > a img {
@@ -658,15 +659,15 @@ main .main_visual {
   will-change: transform;
   transition: 0.5s;
 }
-.artist1 a img{
+.artist1 a img {
   top: -160px;
   left: 80px;
 }
-.artist2 a img{
+.artist2 a img {
   top: -160px;
   left: 800px;
 }
-.artist3 a img{
+.artist3 a img {
   top: -160px;
   left: 80px;
 }
@@ -689,12 +690,9 @@ main .main_visual {
 .artist_box > div:hover h3 {
   background-color: #ff006f;
 }
-.artist2 .text_box{
+.artist2 .text_box {
   justify-content: end;
 }
-.artist2 .text_box div h3{
+.artist2 .text_box div h3 {
   margin-left: auto;
-}
-.artist2 a img{
-  right: 0;
 }
