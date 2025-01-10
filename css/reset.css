@@ -2,7 +2,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+:root {
+  /* 컬러 */
+  --main-color: #ff006f;
+  --border-color: rgba(255, 255, 255, 0.5);
+  --opacity20-color: rgba(255, 255, 255, 0.2);
+  --opacity10-color: rgba(255, 255, 255, 0.1);
+  --sub-text-color: #777;
+}
 html,
 body,
 div,
