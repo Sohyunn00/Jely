@@ -617,7 +617,7 @@ main .main_visual {
   width: 1340px;
   height: fit-content;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 200px 0;
   box-sizing: border-box;
 }
 .sec4 .con .text_title h3 {
@@ -699,17 +699,22 @@ main .main_visual {
 }
 /* 새 앨범 섹션 */
 .sec5 {
-  width: 100%;
+  width: fit-content;
   height: fit-content;
-padding: 300px 0;
+margin: 200px auto;
+position: relative;
+padding-bottom: 200px;
 }
 .sec5 .con{
   width: 1600px;
   margin: 0 auto;
-  background: linear-gradient(var(--opacity20-color), var(--opacity10-color));
+  background: linear-gradient(var(--opacity10-color), transparent);
   padding: 60px;
   box-sizing: border-box;
   position: relative;
+  z-index: 5;
+  backdrop-filter: blur(4px);
+  border-top: 1px solid var(--opacity20-color);
 }
 .con_title{
   display: block;
@@ -721,7 +726,6 @@ padding: 300px 0;
 margin-top: 80px;
 align-items: center;
 justify-content: space-between;
-margin-bottom: 100px;
 }
 .album_box{
   width: 1400px;
@@ -784,19 +788,21 @@ color: var(--main-color);
 .album_back{
   opacity: 0.6;
 }
-.sec5 .con::before{
-  content: "New";
-  position: absolute;
-  top: -270px;
-  right: 20px;
+
+.text_down{
   font-size: 160px;
   font-weight: 600;
   line-height: 140px;
-  animation: text_down 2s ease 1 forwards;
+  position: absolute;
+  top: -300px;
+  right: 0;
+  animation: text_down 1s ease 1 forwards;
   color: transparent;
   animation-play-state: paused;
+  z-index: 1;
+  cursor: default;
 }
-.sec5:hover .con::before{
+.sec5:hover .text_down{
   animation-play-state:running;
 }
 @keyframes text_down{
@@ -804,32 +810,48 @@ color: var(--main-color);
     transform: translateY(0);
   }
   100%{
-    transform: translateY(200px);
+    transform: translateY(230px);
     color: #fff;
   }
 }
-.sec5 .con::after{
-  content: "新しい";
+.bottom_text{
   font-size: 160px;
   font-weight: 600;
   position: absolute;
   left: 0;
   line-height: 140px;
-  bottom: -70px;
+  left: calc(50% - 800px);
+  bottom: 0;
   color: #252525;
+  cursor: default;
+}
+
+/* 인기곡 섹션 */
+.sec6{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin: 200px auto;
+  margin-bottom: 100px;
+}
+.sec6:hover .text_down{
+  animation-play-state:running;
 }
 .sec6 .con{
   width: 1600px;
   height: fit-content;
   margin: 0 auto;
-  border-top: 8px solid rgba(255, 0, 111, 0.4);
+  border-top: 6px solid rgba(255, 0, 111, 0.4);
   background-color: var(--opacity10-color);
   padding: 60px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 5;
+  backdrop-filter: blur(4px);
 }
 .popular_box{
   width: 240px;
-  height: 320px;
+  height: 320px;  
   position: relative;
   border-radius: 8px;
   overflow: hidden;
@@ -842,14 +864,14 @@ color: var(--main-color);
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
-  padding: 80px 0;
+  padding: 100px 0 40px 0;
 }
 .popular_box > img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(20px);
-  opacity: 0.5;
+  filter: blur(5px);
+  opacity: 0.3;
 }
 .popular_img{
   position: relative;
@@ -876,6 +898,7 @@ color: var(--main-color);
   font-size: 22px;
   box-sizing: border-box;
   transition: 0.3s;
+  font-weight: 500;
 }
 .popular_con .text_box a:last-child{
   font-size: 18px;
@@ -906,7 +929,6 @@ display: block;
 }
 .popular_con .text_box a:first-child:hover{
   color: var(--main-color);
-  font-weight: 400;
 }
 .popular_con .text_box a:last-child:hover{
   text-decoration: underline;
