@@ -701,11 +701,11 @@ main .main_visual {
 .sec5 {
   width: fit-content;
   height: fit-content;
-margin: 200px auto;
-position: relative;
-padding-bottom: 200px;
+  margin: 200px auto;
+  position: relative;
+  padding-bottom: 200px;
 }
-.sec5 .con{
+.sec5 .con {
   width: 1600px;
   margin: 0 auto;
   background: linear-gradient(var(--opacity10-color), transparent);
@@ -716,37 +716,39 @@ padding-bottom: 200px;
   backdrop-filter: blur(4px);
   border-top: 1px solid var(--opacity20-color);
 }
-.con_title{
+.con_title {
   display: block;
   width: fit-content;
+  box-sizing: border-box;
 }
-.album_con{
+
+.album_con {
   width: 100%;
   display: flex;
-margin-top: 80px;
-align-items: center;
-justify-content: space-between;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: space-between;
 }
-.album_box{
+.album_box {
   width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.album_back{
+.album_back {
   transform: scale(0.7);
 }
-.album_img{
+.album_img {
   width: 440px;
   height: 440px;
   border-radius: 100%;
   overflow: hidden;
   margin-bottom: 40px;
 }
-.album_front .album_img{
-position: relative;
+.album_front .album_img {
+  position: relative;
 }
-.album_front .album_img a{
+.album_front .album_img a {
   width: 80px;
   text-align: center;
   color: #fff;
@@ -755,41 +757,41 @@ position: relative;
   left: calc(50% - 40px);
   transition: 0.3s;
 }
-.album_front .album_img a i{
+.album_front .album_img a i {
   line-height: 80px;
 }
-.album_front .album_img img{
+.album_front .album_img img {
   transition: 0.5s;
 }
-.album_front .album_img:hover img{
+.album_front .album_img:hover img {
   filter: brightness(50%);
 }
-.album_front .album_img a:hover{
-color: var(--main-color);
+.album_front .album_img a:hover {
+  color: var(--main-color);
 }
-.album_box h3{
+.album_box h3 {
   font-size: 24px;
   font-weight: 500;
   text-align: center;
   margin-bottom: 20px;
   transition: 0.3s;
 }
-.album_box p{
+.album_box p {
   font-size: 20px;
   text-align: center;
   color: var(--sub-text-color);
 }
-.album_front h3:hover{
+.album_front h3:hover {
   color: var(--main-color);
 }
-.album_front p:hover{
-  text-decoration:underline;
+.album_front p:hover {
+  text-decoration: underline;
 }
-.album_back{
+.album_back {
   opacity: 0.6;
 }
 
-.text_down{
+.text_down {
   font-size: 160px;
   font-weight: 600;
   line-height: 140px;
@@ -802,19 +804,19 @@ color: var(--main-color);
   z-index: 1;
   cursor: default;
 }
-.sec5:hover .text_down{
-  animation-play-state:running;
+.sec5:hover .text_down {
+  animation-play-state: running;
 }
-@keyframes text_down{
-  0%{
+@keyframes text_down {
+  0% {
     transform: translateY(0);
   }
-  100%{
+  100% {
     transform: translateY(230px);
     color: #fff;
   }
 }
-.bottom_text{
+.bottom_text {
   font-size: 160px;
   font-weight: 600;
   position: absolute;
@@ -827,17 +829,17 @@ color: var(--main-color);
 }
 
 /* 인기곡 섹션 */
-.sec6{
+.sec6 {
   width: fit-content;
   height: fit-content;
   position: relative;
   margin: 200px auto;
   margin-bottom: 100px;
 }
-.sec6:hover .text_down{
-  animation-play-state:running;
+.sec6:hover .text_down {
+  animation-play-state: running;
 }
-.sec6 .con{
+.sec6 .con {
   width: 1600px;
   height: fit-content;
   margin: 0 auto;
@@ -849,15 +851,15 @@ color: var(--main-color);
   z-index: 5;
   backdrop-filter: blur(4px);
 }
-.popular_box{
+.popular_box {
   width: 240px;
-  height: 320px;  
+  height: 320px;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
 }
-.popular_wrap{
+.popular_wrap {
   width: 1360px;
   margin: 0 auto;
   display: flex;
@@ -866,20 +868,20 @@ color: var(--main-color);
   align-items: center;
   padding: 100px 0 40px 0;
 }
-.popular_box > img{
+.popular_box > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: blur(5px);
   opacity: 0.3;
 }
-.popular_img{
+.popular_img {
   position: relative;
 }
-.popular_img img{
+.popular_img img {
   transition: 0.3s;
 }
-.popular_con{
+.popular_con {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -894,18 +896,18 @@ color: var(--main-color);
   flex-direction: column;
   justify-content: space-evenly;
 }
-.popular_con .text_box a:first-child{
-  font-size: 22px;
+.popular_con .text_box a:first-child {
+  font-size: 20px;
   box-sizing: border-box;
   transition: 0.3s;
   font-weight: 500;
 }
-.popular_con .text_box a:last-child{
+.popular_con .text_box a:last-child {
   font-size: 18px;
   color: var(--sub-text-color);
   font-weight: 600;
 }
-.popular_img > a{
+.popular_img i {
   width: 100px;
   height: 100px;
   text-align: center;
@@ -914,22 +916,123 @@ color: var(--main-color);
   top: 70px;
   left: 70px;
   transition: 0.3s;
-}
-.popular_img i{
-  line-height: 100px;
+  opacity: 0;
   color: var(--main-color);
-  display: none;
+}
+.popular_img:hover img {
+  filter: brightness(0.5);
+}
+.popular_img:hover i {
+  opacity: 1;
+}
+.popular_con .text_box a:first-child:hover {
+  color: var(--main-color);
+}
+.popular_con .text_box a:last-child:hover {
+  text-decoration: underline;
+}
+/* 플레이리스트 섹션 */
+.sec7 .con {
+  width: 1600px;
+  background: linear-gradient(to right, var(--opacity10-color), transparent);
+  padding: 60px;
+  box-sizing: border-box;
+}
+.play_wrap {
+  padding: 100px 60px;
+  box-sizing: border-box;
+}
+.play_box {
+  width: 580px;
+  height: 160px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--opacity10-color);
+  display: flex;
+}
+.play_box > a {
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.play_box > a > i {
+  color: var(--main-color);
+  position: absolute;
+  top: calc(50% - 36px);
+  left: calc(50% - 36px);
+  opacity: 0;
   transition: 0.3s;
 }
-.popular_img:hover img{
-filter: brightness(0.5);
+.play_box img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  transition: 0.3s;
 }
-.popular_img:hover i{
-display: block;
+.play_box > a:hover img {
+  filter: brightness(0.5);
 }
-.popular_con .text_box a:first-child:hover{
+.play_box > a:hover i {
+  opacity: 1;
+}
+.play_right {
+  width: 420px;
+  height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.top_con {
+  width: 100%;
+  height: 60%;
+}
+.top_con p {
+  font-size: 18px;
   color: var(--main-color);
+  margin-bottom: 6px;
+  font-weight: 500;
+  cursor: default;
 }
-.popular_con .text_box a:last-child:hover{
+.top_con a {
+  font-size: 20px;
+}
+.bottom_con {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.bottom_con > a {
+  font-size: 18px;
+  color: var(--sub-text-color);
+}
+.bottom_con a:hover {
   text-decoration: underline;
+}
+.bottom_con .icons {
+  display: flex;
+  gap: 20px;
+}
+.icons i {
+  font-size: 30px;
+  color: var(--sub-text-color);
+  font-weight: 300;
+  transition: 0.3s;
+}
+.icons p {
+  font-size: 16px;
+  color: var(--sub-text-color);
+  font-weight: 500;
+  cursor: default;
+  transition: 0.3s;
+}
+
+.icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons > div:hover :is(i, p) {
+  color: var(--main-color);
 }
