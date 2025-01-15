@@ -632,7 +632,8 @@ main .main_visual {
   margin: 0 auto;
   margin-top: 240px;
 }
-.artist_box > div {
+.artist_box > a {
+  display: block;
   width: 1200px;
   height: 200px;
   position: relative;
@@ -652,7 +653,7 @@ main .main_visual {
 :is(.artist2, .artist3) .text_box {
   border-top: none;
 }
-.artist_box > div > a img {
+.artist_box > a img {
   width: 320px;
   height: 320px;
   filter: brightness(50%);
@@ -660,15 +661,15 @@ main .main_visual {
   will-change: transform;
   transition: 0.5s;
 }
-.artist1 a img {
+.artist1 > img {
   top: -160px;
   left: 80px;
 }
-.artist2 a img {
+.artist2 > img {
   top: -160px;
-  left: 800px;
+  right: 80px;
 }
-.artist3 a img {
+.artist3 > img {
   top: -160px;
   left: 80px;
 }
@@ -684,11 +685,11 @@ main .main_visual {
 .artist_box p {
   font-size: 20px;
 }
-.artist_box > div:hover img {
+.artist_box > a:hover img {
   filter: brightness(100%);
   transform: translateY(-50px);
 }
-.artist_box > div:hover h3 {
+.artist_box > a:hover h3 {
   background-color: #ff006f;
 }
 .artist2 .text_box {
@@ -739,6 +740,7 @@ main .main_visual {
   transform: scale(0.7);
 }
 .album_img {
+  display: block;
   width: 440px;
   height: 440px;
   border-radius: 100%;
@@ -748,7 +750,7 @@ main .main_visual {
 .album_front .album_img {
   position: relative;
 }
-.album_front .album_img a {
+.album_img i {
   width: 80px;
   text-align: center;
   color: #fff;
@@ -756,8 +758,9 @@ main .main_visual {
   top: calc(50% - 40px);
   left: calc(50% - 40px);
   transition: 0.3s;
+  opacity: 0;
 }
-.album_front .album_img a i {
+.album_img a i {
   line-height: 80px;
 }
 .album_front .album_img img {
@@ -766,7 +769,10 @@ main .main_visual {
 .album_front .album_img:hover img {
   filter: brightness(50%);
 }
-.album_front .album_img a:hover {
+.album_front .album_img:hover i {
+  opacity: 1;
+}
+.album_front .album_img i:hover {
   color: var(--main-color);
 }
 .album_box h3 {
