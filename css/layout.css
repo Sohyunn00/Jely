@@ -699,26 +699,30 @@ main .main_visual {
   margin-left: auto;
 }
 /* 새 앨범 섹션 */
-.sec5 {
+:is(.sec5, .sec6, .sec7) {
   width: fit-content;
   height: fit-content;
   margin: 200px auto;
   position: relative;
   padding-bottom: 200px;
+  box-sizing: border-box;
 }
-.sec5 .con {
+/* 섹션 안 con 공통설정 */
+section .con {
   width: 1600px;
-  margin: 0 auto;
-  background: linear-gradient(var(--opacity10-color), transparent);
   padding: 60px;
   box-sizing: border-box;
   position: relative;
   z-index: 5;
   backdrop-filter: blur(4px);
+  margin: 0 auto;
+}
+.sec5 .con {
+  background: linear-gradient(var(--opacity10-color), transparent);
   border-top: 1px solid var(--opacity20-color);
 }
 .con_title {
-  display: block;
+  display: flex;
   width: fit-content;
   box-sizing: border-box;
 }
@@ -835,27 +839,12 @@ main .main_visual {
 }
 
 /* 인기곡 섹션 */
-.sec6 {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-  margin: 200px auto;
-  margin-bottom: 100px;
-}
 .sec6:hover .text_down {
   animation-play-state: running;
 }
 .sec6 .con {
-  width: 1600px;
-  height: fit-content;
-  margin: 0 auto;
   border-top: 6px solid rgba(255, 0, 111, 0.4);
   background-color: var(--opacity10-color);
-  padding: 60px;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 5;
-  backdrop-filter: blur(4px);
 }
 .popular_box {
   width: 240px;
@@ -943,9 +932,16 @@ main .main_visual {
   background: linear-gradient(to right, var(--opacity10-color), transparent);
   padding: 60px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 5;
+  backdrop-filter: blur(4px);
 }
 .play_wrap {
-  padding: 100px 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px;
   box-sizing: border-box;
 }
 .play_box {
@@ -955,6 +951,7 @@ main .main_visual {
   overflow: hidden;
   background-color: var(--opacity10-color);
   display: flex;
+  margin-left: 20px;
 }
 .play_box > a {
   display: block;
@@ -1041,4 +1038,7 @@ main .main_visual {
 }
 .icons > div:hover :is(i, p) {
   color: var(--main-color);
+}
+.sec7:hover .text_down {
+  animation-play-state: running;
 }
