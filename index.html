@@ -29,9 +29,9 @@
               <a href="#">MRS. GREEN APPLE</a>
             </div>
             <div class="icon_wrap">
-              <img src="./img/main/header_rewind.png" alt="이전" />
-              <img src="./img/main/header_pause.png" alt="재생" />
-              <img src="./img/main/header_forward.png" alt="이후" />
+              <a href="#"><i class="xi-backward"></i></a>
+              <a href="#"><i class="xi-pause"></i></a>
+              <a href="#"><i class="xi-forward"></i></a>
             </div>
           </div>
           <!-- 메뉴 -->
@@ -47,8 +47,7 @@
               <li>
                 <a href="#">보관함</a>
                 <ul class="submenu">
-                  <li><a href="#">좋아요</a></li>
-                  <li><a href="#">좋아하는 아티스트</a></li>
+                  <li><a href="#">나의 곡 / 아티스트</a></li>
                   <li><a href="#">나의 플레이리스트</a></li>
                 </ul>
               </li>
@@ -64,20 +63,19 @@
           <!-- 볼륨 컨트롤러 -->
           <input type="range" />
           <!-- 아이콘 -->
-          <div class="icon_wrap">
+          <div class="right_icons">
             <!-- 검색창 -->
             <div class="search_wrap">
               <p>(</p>
               <label for="search">
-                <input type="search" name="search" id="user_pw" />
+                <input type="search" name="search" id="search" />
               </label>
-              <img src="./img/main/header_search.png" alt="검색" />
+              <a href="#"><i class="xi-search"></i></a>
               <p>)</p>
             </div>
             <!-- 로그인 -->
-            <a href="#"
-              ><img src="./img/main/header_user.png" alt="로그인"
-            /></a>
+            <a href="#"><i class="xi-user-o"></i></a>
+            <a href="#"><i class="xi-bars"></i></a>
           </div>
         </div>
       </header>
@@ -90,7 +88,7 @@
               with your <br />
               好きな songs
             </h2>
-            <img src="./img/main/main_visual.jpg" alt="main_visual" />
+            <img src="./img/main/main_visual.png" alt="main_visual" />
             <div class="genre_wrap">
               <img class="genre_ani" src="./img/main/genre1.png" alt="장르" />
               <img class="genre_ani" src="./img/main/genre2.png" alt="장르" />
@@ -108,10 +106,15 @@
               />
               <img class="genre_ani" src="./img/main/genre7.png" alt="장르" />
             </div>
+            <div class="scroll_down">
+              <a href="#sec1">
+                <i class="xi-angle-down-thin xi-4x"></i>
+              </a>
+            </div>
           </div>
         </section>
         <!-- 슬라이드 애니메이션 섹션 -->
-        <section class="sec1">
+        <section id="sec1">
           <div class="con">
             <div class="text_box">
               <h3>J-POP 전용 음원 스트리밍 서비스, <span>Jely</span></h3>
@@ -332,62 +335,64 @@
         <section class="sec2">
           <div class="con">
             <div class="mood_left">
-              <img src="./img/main/mood_imoji.png" alt="이모티콘" />
+              <i class="xi-emoticon-smiley-o xi-2x xi-spin"></i>
               <div class="text_wrap">
                 <h3>오늘의 분위기는 어떠신가요?</h3>
                 <p>다양한 테마별 추천곡을 만나보세요.</p>
               </div>
             </div>
-            <div class="mood_box">
-              <!-- 제목 -->
-              <div class="mood_title">
-                <p>How's your</p>
-                <h2>MOOD</h2>
-                <p>today?</p>
-              </div>
-              <!-- 드라이브 -->
-              <a href="#">
-                <div class="mood_drive">
-                  <p>Drive !</p>
-                  <img src="./img/main/mood_car.png" alt="차" />
+            <div class="mood_right">
+              <div class="mood_box">
+                <!-- 제목 -->
+                <div class="mood_title">
+                  <p>How's your</p>
+                  <h2>MOOD</h2>
+                  <p>today?</p>
                 </div>
-              </a>
-              <!-- 게임 -->
-              <div class="mood_game">
+                <!-- 드라이브 -->
                 <a href="#">
-                  <div class="mood_element">
-                    <img src="./img/main/mood_game.png" alt="게임기" />
+                  <div class="mood_drive">
+                    <p>Drive !</p>
+                    <img src="./img/main/mood_car.png" alt="차" />
                   </div>
                 </a>
-                <p>/</p>
-                <a href="#">
-                  <div class="study_text mood_element">
-                    <p>study</p>
-                    <p>&amp;</p>
-                    <p>work</p>
-                  </div>
-                </a>
-              </div>
-              <!-- 침대 -->
-              <a href="#">
-                <div class="mood_bed">
-                  <img src="./img/main/mood_bed.png" alt="침대" />
-                  <div class="text_wrap">
-                    <p>sleeeeeep . . .</p>
-                    <p>Zz</p>
-                  </div>
+                <!-- 게임 -->
+                <div class="mood_game">
+                  <a href="#">
+                    <div class="mood_element">
+                      <img src="./img/main/mood_game.png" alt="게임기" />
+                    </div>
+                  </a>
+                  <p>/</p>
+                  <a href="#">
+                    <div class="study_text mood_element">
+                      <p>study</p>
+                      <p>&amp;</p>
+                      <p>work</p>
+                    </div>
+                  </a>
                 </div>
-              </a>
-              <!-- 커피 -->
-              <div class="mood_coffee">
+                <!-- 침대 -->
                 <a href="#">
-                  <div><p>JPOP - band = ?</p></div>
-                </a>
-                <a href="#">
-                  <div class="mood_element">
-                    <img src="./img/main/mood_coffee.png" alt="커피" />
+                  <div class="mood_bed">
+                    <img src="./img/main/mood_bed.png" alt="침대" />
+                    <div class="text_wrap">
+                      <p>sleeeeeep . . .</p>
+                      <p>Zz</p>
+                    </div>
                   </div>
                 </a>
+                <!-- 커피 -->
+                <div class="mood_coffee">
+                  <a href="#">
+                    <div><p>JPOP - band = ?</p></div>
+                  </a>
+                  <a href="#">
+                    <div class="mood_element">
+                      <img src="./img/main/mood_coffee.png" alt="커피" />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -489,7 +494,6 @@
               <a href="#"><i class="xi-angle-right-thin xi-3x"></i></a>
             </div>
           </div>
-          <!-- <p class="bottom_text">新しい</p> -->
         </section>
         <!-- 인기곡 섹션 -->
         <section class="sec6">
@@ -631,7 +635,6 @@
               </div>
             </div>
           </div>
-          <!-- <p class="bottom_text">人気</p> -->
         </section>
         <!-- 플레이리스트 섹션 -->
         <section class="sec7">
@@ -814,9 +817,9 @@
           </div>
         </section>
         <!-- 요금제 섹션 -->
-         <section class="sec8">
+        <section class="sec8">
           <div class="con">
-            <h3>나눌수록 커지는 혜택,<br>취향을 나눠보세요.</h3>
+            <h3>나눌수록 커지는 혜택,<br />취향을 나눠보세요.</h3>
             <div class="fee_wrap">
               <div class="fee_box">
                 <p>1인 요금제</p>
@@ -851,13 +854,16 @@
                 </ul>
               </div>
             </div>
-            <a href="#">첫달 무료체험하러 가기 <i class="xi-arrow-right"></i></a>
+            <a href="#"
+              >첫달 무료체험하러 가기 <i class="xi-arrow-right"></i
+            ></a>
           </div>
-         </section>
+        </section>
       </main>
+      <!-- 푸터 -->
       <footer>
         <div class="con">
-          <a href="/"><img src="./img/main/logo.png" alt="logo"></a>
+          <a href="/"><img src="./img/main/logo.png" alt="logo" /></a>
           <div class="text_wrap">
             <div class="footer_menu">
               <a href="#">이용약관</a>
