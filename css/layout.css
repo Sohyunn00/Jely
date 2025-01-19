@@ -33,7 +33,7 @@ body :is(p, h2, h3, h4) {
 }
 /* 헤더 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
 header .con {
-  width: 96%;
+  width: 96vw;
   height: 4vh;
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
@@ -41,8 +41,8 @@ header .con {
   border-radius: 100px;
   backdrop-filter: blur(20px);
   position: fixed;
-  top: 2%;
-  left: 2%;
+  top: 2vh;
+  left: 2vw;
   padding: 0 2%;
   justify-content: space-between;
   align-items: center;
@@ -181,7 +181,7 @@ input[type="range"]::-webkit-slider-thumb {
   gap: 10px;
 }
 .right_icons > a i {
-  font-size: 28px;
+  font-size: 3vh;
 }
 .right_icons a i {
   transition: 0.3s;
@@ -212,15 +212,15 @@ input[type="search"] {
 }
 /* 메인비주얼 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
 main .main_visual {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative;
-  padding-top: 12vh;
+  padding-top: 10vh;
   margin-bottom: 100px;
 }
 .main_visual .con > img {
-  width: 50%;
-  height: auto;
+  width: auto;
+  height: 70vh;
   position: absolute;
   top: 0;
   right: 35%;
@@ -243,7 +243,6 @@ main .main_visual {
   z-index: 10;
   position: relative;
   animation: text_up 1s ease 0.5s 1 forwards;
-  will-change: top opacity;
 }
 @keyframes text_up {
   from {
