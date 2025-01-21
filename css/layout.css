@@ -212,7 +212,7 @@ input[type="search"] {
 }
 /* 메인비주얼 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
 main .main_visual {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   padding-top: 10vh;
@@ -314,7 +314,6 @@ main .main_visual {
   height: fit-content;
   display: flex;
   align-items: center;
-  gap: 100px;
   position: relative;
   padding: 200px 0;
 }
@@ -328,6 +327,9 @@ main .main_visual {
   font-weight: 600;
   margin-bottom: 40px;
 }
+#sec1 .con .text_box h3 br {
+  display: none;
+}
 #sec1 .con .text_box h3 span {
   font-size: 40px;
   color: #ff006f;
@@ -339,12 +341,12 @@ main .main_visual {
   line-height: 40px;
 }
 .slide_wrap {
-  width: 100vw;
+  width: 120vw;
   height: fit-content;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   opacity: 0.3;
 }
 .slide_box {
@@ -371,6 +373,7 @@ main .main_visual {
 }
 .slide_box .img_row_wrap {
   width: 100%;
+
   display: flex;
 }
 .animation {
@@ -411,9 +414,6 @@ main .main_visual {
   align-items: center;
   gap: 18px;
 }
-.mood_left i {
-  font-weight: 300;
-}
 .mood_left .text_wrap h3 {
   font-size: 28px;
   margin-bottom: 14px;
@@ -451,11 +451,10 @@ main .main_visual {
   width: 100%;
   height: 180px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  /* box-sizing: border-box; */
 }
 .sec2 .con .mood_box > a > div {
   width: 100%;
-  height: 180px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -480,7 +479,7 @@ main .main_visual {
 }
 .mood_element {
   width: 180px;
-  height: 180px;
+  height: 100%;
   transition: 0.5s;
 }
 .mood_game .study_text {
@@ -667,7 +666,7 @@ main .main_visual {
 }
 .artist_box .text_box {
   width: 100%;
-  height: 200px;
+  height: 100%;
   display: flex;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.5);

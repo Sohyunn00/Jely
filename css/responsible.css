@@ -1,46 +1,282 @@
 @charset "utf-8";
 /* 모바일 */
-@media screen and (min-width: 320px) and (max-width: 768px){
-    :is(.player, #gnb, input[type="range"], .search_wrap, .genre_wrap ){
-        display: none;
-    }
-    /* 헤더 */
-    header h1 img {
-        height: 3vh;
-    }
-    .right_icons > a:last-child {
-        display: block;
-    }
-    /* 메인비주얼 */
-    main .main_visual{
-        height: fit-content;
-    }
-    .main_visual .con {
-        height: 500px;
-    }
-    .main_visual .con h2{
-        width: 100vw;
-        font-size: 40px;
-        margin-left: 5%;
-    }
-    .main_visual .con h2 span{
-        font-size: 40px;
-    }
-    .main_visual .con > img {
-        width: 100vw;
-        height: auto;
-        right: 0;
-        top: -10px;
-    }
-    #sec1,
-    .sec2,
-    .sec3,
-    .sec4,
-    .sec5,
-    .sec6,
-    .sec7,
-    .sec8,
-    footer {
-      display: none;
-    }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  :is(.player, #gnb, input[type="range"], .search_wrap, .genre_wrap) {
+    display: none;
+  }
+  /* 헤더 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
+  header .con {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  header h1 img {
+    height: 3vh;
+  }
+  .right_icons > a:last-child {
+    display: flex;
+  }
+  .right_icons a {
+    display: flex;
+    align-items: center;
+  }
+  /* 메인비주얼 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
+  main .main_visual {
+    height: 400px;
+  }
+  .main_visual .con {
+    height: 500px;
+  }
+  .main_visual .con h2 {
+    width: 100vw;
+    font-size: 40px;
+    margin-left: 5%;
+  }
+  .main_visual .con h2 span {
+    font-size: 40px;
+  }
+  .main_visual .con > img {
+    width: 100vw;
+    height: auto;
+    right: 0;
+    top: -10px;
+  }
+  .scroll_down {
+    transform: scale(0.6);
+  }
+  /* 앨범 슬라이드 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
+  #sec1 .con {
+    padding: 100px 0;
+  }
+  #sec1 .con .text_box {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+  #sec1 .con .text_box h3 {
+    line-height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #sec1 .con .text_box p {
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 30px;
+  }
+  .slide_box .img_box {
+    width: fit-content;
+    height: fit-content;
+  }
+  .slide_wrap img {
+    width: 100px;
+    height: 100px;
+  }
+  .slide_box {
+    margin-bottom: 10px;
+  }
+  .slide_box .img_row {
+    gap: 10px;
+    margin-right: 10px;
+  }
+  /* 무드 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
+  .sec2 .con {
+    display: block;
+    padding: 0;
+  }
+  .sec2 .mood_left {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .sec2 .mood_left i {
+    font-size: 40px;
+  }
+  .mood_left .text_wrap h3 {
+    font-size: 18px;
+  }
+  .mood_left .text_wrap p {
+    font-size: 16px;
+  }
+  .mood_right {
+    width: 100%;
+  }
+  .sec2 .con .mood_box {
+    width: 90%;
+    font-size: 16px;
+  }
+  .mood_box > div {
+    height: 120px;
+  }
+  .sec2 .con .mood_box > a {
+    height: 120px;
+  }
+  .mood_element {
+    width: 120px;
+    height: 100%;
+    transition: 0.5s;
+  }
+  .mood_box .mood_title {
+    padding: 0 10px;
+    gap: 2px;
+    height: 80px;
+  }
+  .mood_box .mood_title h2 {
+    width: fit-content;
+    font-size: 50px;
+    letter-spacing: -8px;
+    margin: 0 10px;
+  }
+  .mood_box .mood_title p {
+    font-size: 16px;
+  }
+  .mood_drive img {
+    width: 150px;
+  }
+  .mood_game img {
+    width: 70px;
+  }
+  .mood_bed img {
+    width: 110px;
+  }
+  .mood_coffee img {
+    width: 70px;
+  }
+  .mood_game .study_text {
+    padding: 0;
+  }
+  .mood_box .mood_coffee a:first-of-type div {
+    width: 120px;
+    height: 100%;
+  }
+  .mood_coffee div p {
+    line-height: 120px;
+    font-size: 16px;
+  }
+  .mood_box .mood_bed {
+    padding: 0;
+  }
+  /* 애니 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
+  .sec3 .con {
+    width: 100%;
+    padding-top: 160px;
+  }
+  .con .text_title {
+    width: 100vw;
+  }
+  .con .text_title {
+    justify-content: space-evenly;
+  }
+  .con .text_title h3 {
+    font-size: 20px;
+    width: fit-content;
+  }
+  .con .text_title div {
+    width: 130px;
+  }
+  .sec3 .con .anime_bottom {
+    margin: 60px 0;
+  }
+  .sec3 .con .anime_bottom > div {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .anime_bottom p {
+    font-size: 14px;
+  }
+  .anime_bottom :is(.anime1, .anime2, .anime3) p::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  /* 아티스트 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
+  .sec4 .con {
+    width: 100%;
+    padding: 100px 0 0 0;
+  }
+  .sec4 .con .text_title h3 {
+    width: fit-content;
+  }
+  .sec4 .con .text_title div {
+    width: 90px;
+  }
+  .artist_box {
+    width: 100%;
+    margin-top: 180px;
+  }
+  .artist_box > a {
+    width: 90%;
+    height: 140px;
+    margin: 0 auto;
+  }
+  .artist_box > a img {
+    width: 180px;
+    height: 180px;
+  }
+  .artist_box h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 6px 20px;
+  }
+  .artist_box p {
+    font-size: 14px;
+  }
+  .artist_box .text_box {
+    padding: 0 20px;
+  }
+  :is(.artist1, .artist2, .artist3) > img {
+    top: -90px;
+    left: calc(50% - 90px);
+  }
+  /* 새 앨범 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
+  :is(.sec5, .sec6, .sec7) .con {
+    width: 90vw;
+    height: fit-content;
+    margin: 100px auto;
+    position: relative;
+    padding: 4px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+  }
+  .album_back {
+    display: none;
+  }
+  .con_title {
+    display: flex;
+    font-size: 18px;
+    padding: 20px 14px;
+  }
+  .album_con {
+    margin-top: 60px;
+  }
+  .album_img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .album_con > a > i {
+    font-size: 30px;
+  }
+  .album_img i {
+    font-size: 40px;
+    top: calc(50% - 15px);
+  }
+  .album_box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .album_box p {
+    font-size: 16px;
+  }
+  .text_down {
+    font-size: 80px;
+  }
+  .sec6,
+  .sec7,
+  .sec8,
+  footer {
+    display: none;
+  }
 }
