@@ -33,7 +33,7 @@ body :is(p, h2, h3, h4) {
 }
 /* 헤더 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
 header .con {
-  width: 96vw;
+  width: 95%;
   height: 4vh;
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
@@ -42,7 +42,7 @@ header .con {
   backdrop-filter: blur(20px);
   position: fixed;
   top: 2vh;
-  left: 2vw;
+  left: 2.5%;
   padding: 0 2%;
   justify-content: space-between;
   align-items: center;

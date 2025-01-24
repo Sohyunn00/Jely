@@ -4,7 +4,6 @@
   :is(.player, #gnb, input[type="range"], .search_wrap, .genre_wrap) {
     display: none;
   }
-
   /* 헤더 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   header .con {
     padding: 0 10px;
@@ -17,7 +16,7 @@
     gap: 10px;
   }
   .right_icons > a:last-child {
-    display: flex;
+    display: block;
   }
   .right_icons a {
     display: flex;
@@ -584,10 +583,12 @@
     color: var(--sub-text-color);
   }
 }
+/* 태블릿-lg 🥦🥦🥦🥦🥦🥦🥦🥦🥦 */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-  :is(.player, #gnb, input[type="range"], .genre_wrap) {
+  /* :is(.player, #gnb, input[type="range"], .search_wrap, .genre_wrap) {
     display: none;
-  }
+  } */
+
   .right_icons > a:last-child {
     display: flex;
   }
@@ -792,4 +793,189 @@
   .sec8 .con > a {
     margin-top: 80px;
   }
+}
+/* pc 🥦🥦🥦🥦🥦🥦🥦🥦🥦 */
+@media screen and (min-width: 1440px) {
+  /* 헤더 🍅🍅🍅*/
+  .right_icons > a:last-child {
+    display: none;
+  }
+  .con .player {
+    width: fit-content;
+  }
+  input[type="search"] {
+    width: 120px;
+  }
+  #gnb > ul {
+    gap: 4px;
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 80%;
+  }
+  /* 메인비주얼 🍅🍅🍅 */
+  main .main_visual {
+    height: 100vh;
+  }
+  .main_visual .con {
+    height: 100%;
+  }
+  .main_visual .con h2 {
+    font-size: 90px;
+  }
+  .main_visual .con > img {
+    width: 50vw;
+    height: auto;
+    left: 15%;
+  }
+  .main_visual .con .genre_wrap {
+    width: 30%;
+    gap: 10px;
+    top: 8vh;
+    transform: scale(0.9);
+    right: 1%;
+  }
+  /* 무드 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
+  .sec2 .con {
+    display: flex;
+    gap: 80px;
+    padding: 100px;
+  }
+  .sec2 .mood_left {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+  }
+  .mood_right {
+    width: 40vw;
+    height: fit-content;
+  }
+  .sec2 .con .mood_box {
+    width: 100%;
+  }
+  /* 애니 섹션 🍅🍅🍅 */
+  .sec3 .con {
+    width: 90%;
+  }
+  .con .text_title {
+    width: 90%;
+    font-size: 26px;
+  }
+  .sec3 .con .text_title h3 {
+    width: 20%;
+  }
+  .sec3 .con .text_title div {
+    width: 80%;
+  }
+  .sec3 .con .anime_bottom {
+    width: 95%;
+    margin: 120px auto;
+  }
+  .anime_bottom p {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 60px;
+  }
+  .anime_bottom img {
+    width: 480px;
+    height: auto;
+    transition: 0.5s;
+  }
+  /* 아티스트 섹션 🍅🍅🍅 */
+  .sec4 .con .text_title h3 {
+    width: 20%;
+  }
+  .sec4 .con .text_title div {
+    width: 70%;
+  }
+  .artist_box {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 240px;
+  }
+  .artist_box > a img {
+    width: 300px;
+    height: 300px;
+  }
+  :is(.artist1, .artist3) > img {
+    top: -150px;
+    left: 10%;
+  }
+  .artist2 > img {
+    top: -150px;
+    left: calc(90% - 300px);
+  }
+  /* 새 앨범 섹션 🍅🍅🍅 */
+  :is(.sec5, .sec6, .sec7) {
+    margin: 220px auto;
+    /* padding-bottom: 80px; */
+  }
+  :is(.sec5, .sec6, .sec7) .con {
+    width: 90vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+  .con_title {
+    font-size: 24px;
+    padding: 20px 14px;
+  }
+  .album_con > a > i {
+    font-size: 50px;
+  }
+  .album_img {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 40px;
+  }
+  .album_box h3 {
+    margin-bottom: 12px;
+  }
+  .text_down {
+    font-size: 150px;
+  }
+  /* 인기곡 섹션 🍅🍅🍅 */
+  :is(.popular_box:nth-child(9), .popular_box:nth-child(10)) {
+    display: block;
+  }
+  .popular_wrap {
+    width: 95%;
+
+    padding: 60px 0 80px 0;
+    justify-content: space-evenly;
+  }
+  /* 플레이리스트 섹션 🍅🍅🍅 */
+  :is(.play_box:nth-child(5), .play_box:nth-child(6)) {
+    display: flex;
+  }
+  .play_wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 20px 80px 60px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .play_box {
+    width: 45%;
+    height: 45%;
+    margin-left: 0;
+  }
+  /* 요금제 섹션 🍅🍅🍅 */
+  .fee_box {
+    width: 30%;
+    padding: 40px 40px 60px 50px;
+  }
+  .fee_wrap {
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .sec8 .con > a {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 1600px) {
 }
