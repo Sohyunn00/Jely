@@ -232,7 +232,6 @@ main .main_visual {
   display: flex;
   padding: 0;
 }
-
 .main_visual .con h2 {
   font-size: clamp(60px, 40vw, 100px);
   font-weight: 200;
@@ -488,7 +487,7 @@ main .main_visual {
 }
 .mood_game .study_text {
   text-align: center;
-  line-height: 30px;
+  line-height: 20px;
   box-sizing: border-box;
   align-content: center;
 }

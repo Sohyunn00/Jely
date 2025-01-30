@@ -28,6 +28,7 @@
   /* 메인비주얼 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   main .main_visual {
     height: 400px;
+    margin-bottom: 40px;
   }
   .main_visual .con {
     height: 500px;
@@ -51,7 +52,8 @@
   }
   /* 앨범 슬라이드 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   #sec1 .con {
-    padding: 100px 0;
+    padding: 60px 0;
+    margin-bottom: 100px;
   }
   #sec1 .con .text_box {
     width: 100%;
@@ -59,13 +61,19 @@
     text-align: center;
   }
   #sec1 .con .text_box h3 {
-    line-height: 50px;
-    font-size: 20px;
+    line-height: 40px;
+    font-size: 16px;
     margin-bottom: 20px;
   }
+  #sec1 .con .text_box h3 span{
+    font-size: 30px;
+  }
+  #sec1 .con .text_box h3 br {
+    display: block;
+  }
   #sec1 .con .text_box p {
-    font-size: clamp(14px, 2vw, 16px);
-    line-height: 30px;
+    font-size: 12px;
+    line-height: 20px;
   }
   .slide_box .img_box {
     width: fit-content;
@@ -94,36 +102,37 @@
     margin-bottom: 60px;
   }
   .sec2 .mood_left i {
-    font-size: 40px;
+    font-size: 32px;
   }
   .mood_left .text_wrap h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .mood_left .text_wrap p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .mood_right {
     width: 100%;
   }
   .sec2 .con .mood_box {
     width: 90%;
-    font-size: 16px;
+    font-size: 14px;
   }
   .mood_box > div {
-    height: 120px;
+    height: 100px;
   }
   .sec2 .con .mood_box > a {
-    height: 120px;
+    height: 100px;
   }
   .mood_element {
-    width: 120px;
+    width: 100px;
     height: 100%;
     transition: 0.5s;
+    font-size: 14px;
   }
   .mood_box .mood_title {
     padding: 0 10px;
     gap: 2px;
-    height: 80px;
+    height: 60px;
   }
   .mood_box .mood_title h2 {
     width: fit-content;
@@ -131,32 +140,29 @@
     letter-spacing: -8px;
     margin: 0 10px;
   }
-  .mood_box .mood_title p {
-    font-size: 16px;
-  }
   .mood_drive img {
-    width: 150px;
+    width: 130px;
   }
   .mood_game img {
-    width: 70px;
+    width: 60px;
   }
 
   .mood_bed img {
-    width: 110px;
+    width: 90px;
   }
   .mood_coffee img {
-    width: 70px;
+    width: 60px;
   }
   .mood_game .study_text {
     padding: 0;
   }
   .mood_box .mood_coffee a:first-of-type div {
-    width: 120px;
+    width: 100px;
     height: 100%;
   }
   .mood_coffee div p {
-    line-height: 120px;
-    font-size: 16px;
+    line-height: 100px;
+    font-size: 14px;
   }
   .mood_box .mood_bed {
     padding: 0;
@@ -172,11 +178,11 @@
     margin: 0 auto;
   }
   .sec3 .con .text_title h3 {
-    font-size: 18px;
-    width: 50%;
+    font-size: 16px;
+    width: 40%;
   }
   .sec3 .con .text_title div {
-    width: 50%;
+    width: 60%;
   }
   .sec3 .con .anime_bottom {
     margin: 50px 0;
@@ -186,7 +192,7 @@
     margin-bottom: 30px;
   }
   .anime_bottom p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .anime_bottom :is(.anime1, .anime2, .anime3) p::before {
     width: 10px;
@@ -200,44 +206,48 @@
     padding: 100px 0;
   }
   .sec4 .con .text_title h3 {
-    font-size: 18px;
-    width: 60%;
+    font-size: 16px;
+    width: 55%;
   }
   .sec4 .con .text_title div {
     width: 40%;
   }
   .artist_box {
     width: 100%;
-    margin-top: 180px;
+    margin-top: 140px;
   }
   .artist_box > a {
     width: 90%;
-    height: 140px;
+    height: 120px;
     margin: 0 auto;
   }
   .artist_box > a img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
   }
   .artist_box h3 {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
     padding: 6px 20px;
   }
   .artist_box p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .artist_box .text_box {
     padding: 0 20px;
   }
   :is(.artist1, .artist2, .artist3) > img {
-    top: -90px;
-    left: calc(50% - 90px);
+    top: -80px;
+    left: calc(50% - 80px);
+  }
+  .artist_box > a:hover img {
+    filter: brightness(100%);
+    transform: translateY(-30px);
   }
   /* 새 앨범 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   :is(.sec5, .sec6, .sec7) {
-    margin: 100px auto;
-    padding-bottom: 80px;
+    margin: 80px auto;
+    padding-bottom: 50px;
   }
   :is(.sec5, .sec6, .sec7) .con {
     width: 90vw;
@@ -247,12 +257,21 @@
     padding-bottom: 40px;
     box-sizing: border-box;
   }
+  @keyframes text_down {
+    0% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(225px);
+      color: #fff;
+    }
+  }
   .album_back {
     display: none;
   }
   .con_title {
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
     padding: 20px 14px;
   }
   .album_con {
@@ -281,7 +300,7 @@
     font-size: 16px;
   }
   .text_down {
-    font-size: 80px;
+    font-size: 70px;
   }
   /* 인기곡 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   .sec6 .con {
@@ -306,11 +325,11 @@
     padding: 4px 8px;
   }
   .popular_con .text_box a:first-child {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
   }
   .popular_con .text_box a:last-child {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 300;
   }
   .popular_img i {
@@ -330,7 +349,7 @@
   }
   /* 플레이리스트 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   .sec7 {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .play_wrap {
     width: 95%;
@@ -409,6 +428,10 @@
   .fee_box:first-child > p:last-of-type {
     display: none;
   }
+  .fee_box p:nth-of-type(1) {
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
   .fee_box ul {
     text-align: start;
     list-style: disc;
@@ -417,11 +440,13 @@
   }
   .fee_box ul li {
     line-height: 30px;
+    font-size: 12px;
   }
   .sec8 .con > a {
     width: fit-content;
-    padding: 14px 24px;
+    padding: 12px 24px;
     margin-top: 80px;
+    font-size: 12px;
   }
   /* 푸터 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   footer .con {
@@ -441,17 +466,25 @@
 }
 /* 태블릿-sm 🥦🥦🥦🥦🥦🥦🥦🥦🥦 */
 @media screen and (min-width: 480px) and (max-width: 1024px) {
+  .main_visual{
+    height: fit-content;
+    margin-bottom: 100px;
+  }
   .main_visual .con {
-    height: 600px;
+    height: 500px;
   }
   .main_visual .con h2 {
     font-size: 50px;
   }
   .scroll_down {
-    bottom: 13vh;
+    bottom: 0;
     right: calc(50% - 48px);
   }
   /* 앨범 슬라이드 애니메이션 섹션 🍅🍅🍅 */
+  #sec1 .con {
+    padding: 100px 0;
+    margin: 100px 0;
+  }
   #sec1 .con .text_box h3 br {
     display: block;
   }
