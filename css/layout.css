@@ -25,7 +25,7 @@ section .con {
   box-sizing: border-box;
   position: relative;
   z-index: 5;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
   margin: 0 auto;
 }
 body :is(p, h2, h3, h4) {
@@ -34,7 +34,7 @@ body :is(p, h2, h3, h4) {
 /* 헤더 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
 header .con {
   width: 95%;
-  height: 4vh;
+  height: 5vh;
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -103,7 +103,7 @@ header .con {
   gap: 20px;
 }
 #gnb > ul > li {
-  line-height: 4vh;
+  line-height: 5vh;
   font-size: 18px;
 }
 #gnb > ul > li:hover > a {
@@ -120,7 +120,6 @@ header .con {
   overflow: hidden;
   margin-top: 10px;
   transition: 0.5s;
-  /* border-radius: 8px; */
   background-color: rgba(255, 0, 111, 0.5);
   padding: 0 12px;
   box-sizing: border-box;
@@ -460,7 +459,6 @@ main .main_visual {
   box-sizing: border-box;
   transition: 0.5s;
 }
-
 .mood_drive img {
   width: 220px;
   height: auto;
@@ -590,6 +588,10 @@ main .main_visual {
   width: 100%;
   height: fit-content;
   margin: 120px 0;
+}
+.anime_bottom a {
+  display: block;
+  width: fit-content;
 }
 .sec3 .con .anime_bottom > div {
   width: 80%;
@@ -735,6 +737,9 @@ main .main_visual {
   padding-bottom: 200px;
   box-sizing: border-box;
 }
+:is(.sec5, .sec6, .sec7) .con{
+backdrop-filter: blur(4px);
+}
 .sec5 .con {
   background: linear-gradient(var(--opacity10-color), transparent);
   border-top: 1px solid var(--opacity20-color);
@@ -744,7 +749,6 @@ main .main_visual {
   width: fit-content;
   box-sizing: border-box;
 }
-
 .album_con {
   width: 100%;
   display: flex;
@@ -1095,11 +1099,11 @@ main .main_visual {
   padding: 40px 60px;
   transition: 0.5s;
 }
-
 .fee_box p:nth-of-type(1) {
   font-size: clamp(14px, 2vw, 20px);
   color: #fff;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 .fee_box p:nth-of-type(2) {
   font-size: clamp(20px, 2vw, 30px);
@@ -1126,9 +1130,11 @@ main .main_visual {
   width: fit-content;
   padding: 14px 32px;
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  gap: 8px;
+  align-items: center;
   font-size: clamp(14px, 2vw, 20px);
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 150px;
   border: 2px solid #fff;
   margin: 0 auto;
@@ -1137,6 +1143,7 @@ main .main_visual {
 }
 .sec8 .con > a:hover {
   color: var(--main-color);
+  background-color: #000;
   border: 2px solid var(--main-color);
   font-weight: 600;
 }
