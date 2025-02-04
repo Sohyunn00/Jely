@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+@import url("./reset.css");
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+:is(.container, main, section) {
+  width: 100%;
+}
+section .con {
+  width: 90%;
+  margin: 200px auto;
+}
+/* 새로운 곡 섹션 */
+.con .sub1_title {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.con .more {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: end;
+  margin-bottom: 20px;
+}
+.con .more img {
+  transform: scale(0.9);
+}
+.slide_wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.swiper .slide_wrap .slide {
+  width: 15%;
+  height: auto;
+}
+.swiper .slide_wrap .slide > a {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.swiper .slide_wrap .slide img {
+  width: 100%;
+  height: auto;
+}
+.swiper .slide_wrap .slide .slide_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 4px;
+  box-sizing: border-box;
+}
+.slide .slide_text a:first-child {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.slide .slide_text a:last-child {
+  font-size: 16px;
+  color: var(--sub-text-color);
+}
+.slide .slide_text a:last-child:hover {
+  text-decoration: underline;
+}
+.slide .swiper-button-next {
+  color: var(--sub-text-color);
+}
+.swiper-button-next {
+  color: var(--sub-text-color) !important;
+}
+.swiper-button-next:after {
+  font-size: 2rem !important;
+}
