@@ -1,0 +1,239 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+@import url("./reset.css");
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  font-weight: 300;
+  box-sizing: border-box;
+  height: 10000px;
+}
+:is(.container, main, section) {
+  width: 100%;
+}
+section .con {
+  width: 90%;
+  margin: 180px auto;
+}
+/* 상단 메뉴 */
+.sec1 .con {
+  display: flex;
+  gap: 40px;
+}
+.sec1 a {
+  display: block;
+  font-size: 20px;
+  width: fit-content;
+  line-height: 1.2;
+  position: relative;
+}
+.sec1 a:first-child {
+  font-weight: 600;
+  color: var(--main-color);
+}
+.sec1 a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0px;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: var(--main-color);
+}
+.sec1 a:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+/* 좋아하는 곡 섹션 */
+.con .sub2_title {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+.sec2 .like_box {
+  width: 100%;
+  height: 900px;
+  display: flex;
+}
+.like_box .like_left {
+  width: 30%;
+  height: 900px;
+}
+.like_left .like_left_con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: sticky;
+  top: 60px;
+}
+.like_left_con > img {
+  width: 36%;
+}
+.like_left_con p {
+  font-size: 18px;
+}
+.like_left_con a {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+.like_left_con a img {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.like_left_con a:hover img {
+  opacity: 0.9;
+}
+.like_box .like_right {
+  width: 70%;
+}
+.like_wrap .more {
+  width: 90%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: end;
+}
+.like_wrap .more a {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.like_wrap .more img {
+  transform: scale(0.9);
+}
+.like_right .like_wrap {
+  width: 80%;
+}
+.like_wrap .music_box {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  margin-bottom: 16px;
+}
+.music_box .box_left {
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+.music_box .box_left > a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.music_box .box_left p {
+  width: 50px;
+  height: 100%;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+}
+.box_left .text_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+.box_left .text_box a:first-child {
+  font-size: 18px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.box_left .text_box a:last-child {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--sub-text-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.box_left .text_box a:last-child:hover {
+  text-decoration: underline;
+}
+.music_box .icons {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  gap: 20px;
+  justify-content: end;
+}
+.music_box .icons a img {
+  height: 60%;
+  opacity: 0.6;
+}
+/* 좋아하는 아티스트 섹션 */
+.sec3 .recent_artist {
+  width: 100%;
+}
+.sec3 .sub2_subtitle {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.recent_artist .recent_artist_wrap {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.recent_artist_wrap .card {
+  display: block;
+  width: 22%;
+  height: fit-content;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  transition: 0.4s;
+}
+.card .card_text {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  padding: 0 8%;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.card_text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 2;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 2px solid var(--opacity20-color);
+}
+.card_text p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.recent_artist_wrap .card:hover img {
+  opacity: 0.4;
+  transform: scale(1.05);
+}
+.recent_artist_wrap .card:hover .card_text {
+  opacity: 1;
+}

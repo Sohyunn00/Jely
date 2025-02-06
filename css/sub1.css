@@ -18,7 +18,7 @@ body {
 }
 section .con {
   width: 90%;
-  margin: 200px auto;
+  margin: 180px auto;
 }
 /* 새로운 곡 섹션 */
 .con .sub1_title {
@@ -30,7 +30,7 @@ section .con {
 .con .more {
   width: 100%;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 20px;
   display: flex;
   justify-content: end;
@@ -75,11 +75,18 @@ section .con {
 }
 .slide .slide_text a:first-child {
   font-size: 18px;
+  font-weight: 400;
   margin-bottom: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .slide .slide_text a:last-child {
   font-size: 16px;
   color: var(--sub-text-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .slide .slide_text a:last-child:hover {
   text-decoration: underline;
@@ -139,11 +146,17 @@ section .con {
 .box_left .text_box a:first-child {
   font-size: 18px;
   font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .box_left .text_box a:last-child {
   font-size: 16px;
   font-weight: 300;
   color: var(--sub-text-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .box_left .text_box a:last-child:hover {
   text-decoration: underline;
@@ -198,6 +211,9 @@ section .con {
   padding: 6%;
   font-size: 20px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .genre_row > a .text p:last-child {
   text-align: end;
