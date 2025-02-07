@@ -143,3 +143,6 @@ a {
   text-decoration: none;
   color: white;
 }
+:is(p, span, h2, h3, h4) {
+  cursor: default;
+}

@@ -11,7 +11,6 @@ body {
   color: #fff;
   font-weight: 300;
   box-sizing: border-box;
-  height: 10000px;
 }
 :is(.container, main, section) {
   width: 100%;
@@ -20,10 +19,11 @@ section .con {
   width: 90%;
   margin: 180px auto;
 }
-/* 상단 메뉴 */
+/* 상단 메뉴 🌎🌎🌎 */
 .sec1 .con {
   display: flex;
   gap: 40px;
+  margin-bottom: 100px;
 }
 .sec1 a {
   display: block;
@@ -36,7 +36,17 @@ section .con {
   font-weight: 600;
   color: var(--main-color);
 }
-.sec1 a:after {
+.sec1 a:first-child:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  margin: 5px 0 0;
+  background-color: var(--main-color);
+}
+.sec1 a:last-child:after {
   content: "";
   position: absolute;
   left: 0;
@@ -53,10 +63,13 @@ section .con {
   width: 100%;
   opacity: 1;
 }
-/* 좋아하는 곡 섹션 */
+/* 좋아하는 곡 섹션 🌎🌎🌎 */
+.sec2 .con {
+  margin-top: 100px;
+}
 .con .sub2_title {
   width: 100%;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 80px;
 }
@@ -79,15 +92,15 @@ section .con {
   top: 60px;
 }
 .like_left_con > img {
-  width: 36%;
+  width: 40%;
 }
 .like_left_con p {
   font-size: 18px;
 }
 .like_left_con a {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 20%;
+  height: fit-content;
 }
 .like_left_con a img {
   width: 100%;
@@ -147,6 +160,7 @@ section .con {
 }
 .box_left .text_box {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 5px 20px;
@@ -180,15 +194,19 @@ section .con {
 .music_box .icons a img {
   height: 60%;
   opacity: 0.6;
+  transition: 0.3s;
 }
-/* 좋아하는 아티스트 섹션 */
+.music_box .icons a:hover img {
+  opacity: 0.3;
+}
+/* 좋아하는 아티스트 섹션 🌎🌎🌎*/
 .sec3 .recent_artist {
   width: 100%;
 }
-.sec3 .sub2_subtitle {
+.con .sub2_subtitle {
   width: 100%;
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-size: 20px;
+  margin-bottom: 60px;
 }
 .recent_artist .recent_artist_wrap {
   width: 85%;
@@ -227,6 +245,7 @@ section .con {
   border-bottom: 2px solid var(--opacity20-color);
 }
 .card_text p {
+  width: 100%;
   font-size: 18px;
   line-height: 1.4;
 }
@@ -236,4 +255,39 @@ section .con {
 }
 .recent_artist_wrap .card:hover .card_text {
   opacity: 1;
+}
+/* 구독한 아티스트 섹션 🌎🌎🌎 */
+.sec4 .subscribe_wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.subscribe_wrap .subscribe_box {
+  width: 15%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+.subscribe_box a {
+  display: block;
+  width: 70%;
+  height: fit-content;
+}
+.subscribe_box a img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+.subscribe_box p {
+  color: var(--sub-text-color);
+  font-size: 18px;
+  font-weight: 300;
+}
+.subscribe_box a:hover img {
+  /* filter: hue-rotate(180deg); */
+  filter: grayscale(1);
 }
