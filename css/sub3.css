@@ -1,0 +1,262 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+@import url("./reset.css");
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  font-weight: 300;
+  box-sizing: border-box;
+  height: 10000px;
+}
+:is(.container, main, section) {
+  width: 100%;
+}
+section .con {
+  width: 90%;
+  margin: 180px auto;
+}
+/* 상단 메뉴 🌎🌎🌎 */
+.sec1 .con {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+.sec1 a {
+  display: block;
+  font-size: 20px;
+  width: fit-content;
+  line-height: 1.2;
+  position: relative;
+}
+.sec1 a:last-child {
+  font-weight: 600;
+  color: var(--main-color);
+}
+.sec1 a:last-child:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  margin: 5px 0 0;
+  background-color: var(--main-color);
+}
+.sec1 a:first-child:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0px;
+  height: 2px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: var(--main-color);
+}
+.sec1 a:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+/* 나의 플레이리스트 섹션 🌎🌎🌎 */
+.sec2 .con {
+  margin-top: 100px;
+}
+.con .sub2_title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+.sec2 .play_box {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+.play_box .play_left {
+  width: 30%;
+  height: 860px;
+}
+.play_left .play_left_con {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: sticky;
+  top: 60px;
+}
+.play_box .play_left p {
+  font-size: 20px;
+}
+.play_box .play_left img {
+  width: 40%;
+  height: auto;
+}
+.play_box .play_right {
+  width: 70%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 100px;
+  padding-right: 120px;
+}
+.play_right a {
+  display: block;
+  position: relative;
+  width: 21%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.play_right a:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.play_right a img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.play_right .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.play_right .text p {
+  padding: 6%;
+  font-size: 20px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.play_right .text p:last-child {
+  font-size: 18px;
+  text-align: end;
+  font-weight: 400;
+}
+.play_right a:hover img {
+  opacity: 0.95;
+}
+/* 좋아하는 플레이리스트 섹션 */
+.con .sub3_subtitle {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+.sec3 .play_wrap {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.play_wrap .playlist_box {
+  width: 40%;
+  height: 160px;
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--opacity10-color);
+}
+.play_wrap .playlist_box > a {
+  display: block;
+  width: 160px;
+  height: 100%;
+  position: relative;
+}
+.playlist_box > a img:first-child {
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+.playlist_box > a img:last-child {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: calc(50% - 35%);
+  left: calc(50% - 35%);
+  opacity: 0;
+  transition: 0.3s;
+}
+.playlist_box > a:hover img:first-child {
+  opacity: 0.6;
+}
+.playlist_box > a:hover img:last-child {
+  opacity: 1;
+}
+.playlist_box .playlist_right {
+  width: calc(100% - 160px);
+  border: 1px solid var(--opacity10-color);
+  border-left: none;
+  box-sizing: border-box;
+  padding: 3% 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.playlist_box .play_top {
+  width: 100%;
+}
+.playlist_box .play_top p {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.playlist_box .play_top a {
+  font-size: 20px;
+  font-weight: 500;
+}
+.playlist_box .play_btm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.playlist_box .play_btm > a {
+  color: var(--sub-text-color);
+  font-size: 18px;
+}
+.playlist_box .play_btm > a:hover {
+  text-decoration: underline;
+}
+.playlist_box .play_btm .icons {
+  display: flex;
+  gap: 20px;
+}
+.play_btm .icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.play_btm .icons p {
+  font-size: 16px;
+  color: var(--sub-text-color);
+  transition: 0.3s;
+}
+.play_btm .icons a img {
+  transform: scale(1.5);
+  filter: grayscale(1);
+}
+.play_btm .icons a:hover img {
+  filter: grayscale(0);
+  transition: 0.3s;
+}
+.play_btm .icons a:hover p {
+  color: var(--main-color);
+}

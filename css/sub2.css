@@ -92,24 +92,24 @@ section .con {
   top: 60px;
 }
 .like_left_con > img {
-  width: 40%;
+  width: 35%;
 }
 .like_left_con p {
-  font-size: 18px;
+  font-size: 20px;
 }
 .like_left_con a {
   display: block;
-  width: 20%;
+  width: 18%;
   height: fit-content;
 }
 .like_left_con a img {
   width: 100%;
   height: auto;
-  opacity: 0.6;
+  filter: grayscale(1);
   transition: 0.3s;
 }
 .like_left_con a:hover img {
-  opacity: 0.9;
+  filter: grayscale(0);
 }
 .like_box .like_right {
   width: 70%;
