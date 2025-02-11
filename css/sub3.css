@@ -81,7 +81,7 @@ section .con {
 }
 .play_box .play_left {
   width: 30%;
-  height: 860px;
+  height: 740px;
 }
 .play_left .play_left_con {
   width: 100%;
@@ -89,7 +89,7 @@ section .con {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
   position: sticky;
   top: 60px;
 }
@@ -97,16 +97,18 @@ section .con {
   font-size: 20px;
 }
 .play_box .play_left img {
-  width: 40%;
+  width: 35%;
   height: auto;
 }
 .play_box .play_right {
   width: 70%;
+  height: fit-content;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  padding: 0 100px;
+  align-items: flex-start;
   padding-right: 120px;
+  box-sizing: border-box;
 }
 .play_right a {
   display: block;
@@ -114,6 +116,7 @@ section .con {
   width: 21%;
   border-radius: 8px;
   overflow: hidden;
+  /* aspect-ratio: 1 / 1; */
 }
 .play_right a:after {
   content: "";
@@ -127,7 +130,7 @@ section .con {
   opacity: 0.6;
   transition: 0.5s;
 }
-.play_right .text {
+.play_right a .text {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -137,6 +140,7 @@ section .con {
 }
 .play_right .text p {
   padding: 6%;
+  box-sizing: border-box;
   font-size: 20px;
   font-weight: 600;
   text-overflow: ellipsis;
@@ -151,14 +155,14 @@ section .con {
 .play_right a:hover img {
   opacity: 0.95;
 }
-/* 좋아하는 플레이리스트 섹션 */
+/* 좋아하는 플레이리스트 섹션 🌎🌎🌎*/
 .con .sub3_subtitle {
   width: 100%;
   font-size: 20px;
   margin-bottom: 60px;
 }
 .sec3 .play_wrap {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -245,7 +249,8 @@ section .con {
   gap: 8px;
 }
 .play_btm .icons p {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
   color: var(--sub-text-color);
   transition: 0.3s;
 }
