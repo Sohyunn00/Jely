@@ -232,7 +232,7 @@
   }
   .play_box .play_left {
     width: 30%;
-    height: 560px;
+    height: auto;
   }
   .play_left .play_left_con {
     gap: 20px;
@@ -315,6 +315,10 @@
   .con .sub2_title {
     font-size: 26px;
     margin-bottom: 60px;
+  }
+  .play_box .play_left {
+    width: 30%;
+    height: auto;
   }
   .play_box .play_left img {
     width: 45%;

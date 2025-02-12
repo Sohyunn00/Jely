@@ -80,7 +80,7 @@ section .con {
 }
 .like_box .like_left {
   width: 30%;
-  height: 900px;
+  height: auto;
 }
 .like_left .like_left_con {
   width: 100%;

@@ -81,7 +81,7 @@ section .con {
 }
 .play_box .play_left {
   width: 30%;
-  height: 740px;
+  height: auto;
 }
 .play_left .play_left_con {
   width: 100%;
@@ -154,6 +154,7 @@ section .con {
 }
 .play_right a:hover img {
   opacity: 0.95;
+  transform: scale(1.05);
 }
 /* 좋아하는 플레이리스트 섹션 🌎🌎🌎*/
 .con .sub3_subtitle {

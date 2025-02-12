@@ -342,7 +342,7 @@
   }
   .like_box .like_left {
     width: 30%;
-    height: 550px;
+    height: auto;
   }
   .like_left .like_left_con {
     gap: 20px;
@@ -477,7 +477,7 @@
   }
   .like_box .like_left {
     width: 30%;
-    height: 600px;
+    height: auto;
   }
   .like_left .like_left_con {
     gap: 20px;

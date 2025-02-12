@@ -7,14 +7,14 @@
   /* 헤더 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   header .con {
     width: 95%;
-    padding: 0 10px;
+    padding: 0 14px;
     box-sizing: border-box;
   }
   header h1 img {
-    height: 3vh;
+    width: 46px;
   }
   .con > .right_icons {
-    gap: 10px;
+    gap: 14px;
   }
   .right_icons > a:last-child {
     display: block;
@@ -23,8 +23,8 @@
     display: flex;
     align-items: center;
   }
-  .right_icons a i {
-    font-size: 24px;
+  .right_icons a img {
+    width: 18px;
   }
   /* 메인비주얼 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   main .main_visual {
@@ -102,8 +102,8 @@
     text-align: center;
     margin-bottom: 60px;
   }
-  .sec2 .mood_left i {
-    font-size: 32px;
+  .sec2 .mood_left img {
+    width: 40px;
   }
   .mood_left .text_wrap h3 {
     font-size: 16px;
@@ -270,9 +270,11 @@
     display: none;
   }
   .con_title {
-    display: flex;
     font-size: 16px;
     padding: 20px 14px;
+  }
+  .con_title img {
+    width: 30px;
   }
   .album_con {
     margin-top: 60px;
@@ -293,11 +295,11 @@
     top: calc(50% - 15px);
   }
   .album_box h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
   .album_box p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .text_down {
     font-size: 70px;
@@ -436,13 +438,14 @@
   }
   .sec8 .con > a {
     width: fit-content;
-    padding: 10px 20px;
+    height: 40px;
+    padding: 0 20px;
     margin-top: 80px;
     font-size: 12px;
     border: 1px solid #fff;
   }
-  .sec8 .con > a > i {
-    font-size: 14px;
+  .sec8 .con > a > img {
+    width: 20px;
   }
   /* 푸터 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   footer .con {

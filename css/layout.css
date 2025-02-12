@@ -93,14 +93,18 @@ header .con {
   height: fit-content;
   display: flex;
   margin-left: 10px;
-  gap: 4px;
 }
-.player a i {
-  color: var(--sub-text-color);
+.player .icon_wrap a {
+  display: block;
+}
+.player .icon_wrap a img {
+  width: 34px;
+  height: auto;
+  opacity: 0.8;
   transition: 0.3s;
 }
-.icon_wrap > a:hover i {
-  color: #fff;
+.icon_wrap > a:hover img {
+  opacity: 0.3;
 }
 /* 헤더 메뉴 */
 #gnb {
@@ -189,21 +193,22 @@ input[type="range"]::-webkit-slider-thumb {
   align-items: center;
   gap: 10px;
 }
-.right_icons > a i {
-  font-size: 3vh;
+.right_icons a {
+  display: block;
 }
-.right_icons a i {
+.right_icons a img {
+  transform: scale(1.6);
   transition: 0.3s;
+}
+.right_icons a:hover img {
+  opacity: 0.5;
 }
 .right_icons > a:last-child {
   display: none;
 }
-.right_icons a:hover i {
-  color: var(--main-color);
-}
 .right_icons .search_wrap p {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 300;
   cursor: default;
 }
 input[type="search"]::-webkit-search-cancel-button,
@@ -420,6 +425,10 @@ main .main_visual {
   display: flex;
   align-items: center;
   gap: 18px;
+}
+.sec2 .mood_left img {
+  width: 50px;
+  height: auto;
 }
 .mood_left .text_wrap h3 {
   font-size: 28px;
@@ -755,8 +764,12 @@ main .main_visual {
 }
 .con_title {
   display: flex;
+  align-items: center;
   width: fit-content;
-  box-sizing: border-box;
+  height: fit-content;
+}
+.con_title img {
+  width: 40px;
 }
 .album_con {
   width: 100%;
@@ -1048,12 +1061,15 @@ main .main_visual {
 }
 .bottom_con .icons {
   display: flex;
-  gap: 20px;
+  gap: 12px;
 }
-.icons i {
-  font-size: 30px;
-  color: var(--sub-text-color);
-  font-weight: 300;
+.bottom_con .icons a {
+  display: block;
+}
+.icons img {
+  width: 32px;
+  height: auto;
+  filter: grayscale(1);
   transition: 0.3s;
 }
 .icons p {
@@ -1063,14 +1079,17 @@ main .main_visual {
   cursor: default;
   transition: 0.3s;
 }
-
 .icons div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2px;
 }
-.icons > div:hover :is(i, p) {
+.icons > div:hover p {
   color: var(--main-color);
+}
+.icons > div:hover img {
+  filter: grayscale(0.2);
 }
 .sec7:hover .text_down {
   animation-play-state: running;
@@ -1082,16 +1101,16 @@ main .main_visual {
   background: url("../img/main/fee_bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  padding-bottom: 300px;
 }
 .sec8 .con {
-  padding: 0;
+  padding: 240px 0;
+  box-sizing: border-box;
 }
 .sec8 h3 {
   font-size: clamp(20px, 3vw, 40px);
   font-weight: 600;
   text-align: center;
-  margin: 100px 0;
+  margin-bottom: 100px;
   line-height: 1.6;
 }
 .fee_wrap {
@@ -1140,7 +1159,8 @@ main .main_visual {
 }
 .sec8 .con > a {
   width: fit-content;
-  padding: 14px 32px;
+  height: 60px;
+  padding: 0 32px;
   box-sizing: border-box;
   display: flex;
   gap: 8px;
@@ -1153,11 +1173,20 @@ main .main_visual {
   margin-top: 120px;
   transition: 0.3s;
 }
+.sec8 .con > a img {
+  width: 30px;
+  height: auto;
+  display: none;
+  transition: 0.3s;
+}
 .sec8 .con > a:hover {
   color: var(--main-color);
   background-color: #000;
   border: 2px solid var(--main-color);
   font-weight: 600;
+}
+.sec8 .con > a:hover img {
+  display: block;
 }
 .fee_box:hover {
   transform: scale(1.05);
