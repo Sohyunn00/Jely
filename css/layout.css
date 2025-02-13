@@ -778,7 +778,21 @@ main .main_visual {
   align-items: center;
   justify-content: space-between;
 }
-.album_box {
+.album_con #slider-div {
+  width: 100%;
+}
+.album_img {
+  display: block;
+  width: 440px;
+  height: 440px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+/* #slider-div > div {
+  width: 30%;
+} */
+/* .album_box {
   width: 1400px;
   display: flex;
   justify-content: center;
@@ -798,30 +812,11 @@ main .main_visual {
 .album_front .album_img {
   position: relative;
 }
-.album_img i {
-  width: 80px;
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  top: calc(50% - 40px);
-  left: calc(50% - 40px);
-  transition: 0.3s;
-  opacity: 0;
-}
-.album_img a i {
-  line-height: 80px;
-}
 .album_front .album_img img {
   transition: 0.5s;
 }
 .album_front .album_img:hover img {
   filter: brightness(50%);
-}
-.album_front .album_img:hover i {
-  opacity: 1;
-}
-.album_front .album_img i:hover {
-  color: var(--main-color);
 }
 .album_box h3 {
   font-size: 24px;
@@ -840,11 +835,7 @@ main .main_visual {
 }
 .album_front p:hover {
   text-decoration: underline;
-}
-.album_back {
-  opacity: 0.6;
-}
-
+} */
 .text_down {
   font-size: 160px;
   font-weight: 600;

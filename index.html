@@ -6,10 +6,19 @@
     <title>Jely</title>
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/responsible.css" />
+    <!-- 제이쿼리 -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- slick slider -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    cs
   </head>
   <body>
     <div class="container">
@@ -481,32 +490,36 @@
               <img src="./img/main/right_angle.svg" alt="icon" />
             </a>
             <div class="album_con">
-              <a href="#"><i class="xi-angle-left-thin xi-3x"></i></a>
-              <div class="album_box">
-                <div class="album_back">
-                  <div class="album_img">
+              <div id="slider-div">
+                <div class="slider_card">
+                  <a class="album_img">
                     <img src="./img/main/album1.jpg" alt="album" />
-                  </div>
+                  </a>
                   <a href="#"><h3>はいよろこんで</h3></a>
                   <a href="#"><p>Kocchi no Kento</p></a>
                 </div>
-                <div class="album_front">
+                <div class="slider_card">
                   <a href="#" class="album_img">
                     <img src="./img/main/album2.jpg" alt="album" />
-                    <i class="xi-plus xi-3x"></i>
                   </a>
                   <a href="#"><h3>UNITY</h3></a>
                   <a href="#"><p>Saegusa Akina</p></a>
                 </div>
-                <div class="album_back">
-                  <div class="album_img">
+                <div class="slider_card">
+                  <a class="album_img">
                     <img src="./img/main/album3.jpg" alt="album" />
-                  </div>
+                  </a>
+                  <a href="#"><h3>晩餐歌</h3></a>
+                  <a href="#"><p>tuki.</p></a>
+                </div>
+                <div class="slider_card">
+                  <a class="album_img">
+                    <img src="./img/main/album3.jpg" alt="album" />
+                  </a>
                   <a href="#"><h3>晩餐歌</h3></a>
                   <a href="#"><p>tuki.</p></a>
                 </div>
               </div>
-              <a href="#"><i class="xi-angle-right-thin xi-3x"></i></a>
             </div>
           </div>
         </section>
@@ -929,5 +942,35 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#slider-div").slick({
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
