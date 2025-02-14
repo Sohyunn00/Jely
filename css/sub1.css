@@ -91,9 +91,6 @@ section .con {
 .slide .slide_text a:last-child:hover {
   text-decoration: underline;
 }
-.slide .swiper-button-next {
-  color: var(--sub-text-color);
-}
 .swiper-button-next {
   color: var(--sub-text-color) !important;
 }

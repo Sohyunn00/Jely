@@ -8,17 +8,13 @@
     <link rel="stylesheet" href="./css/responsible.css" />
     <!-- 제이쿼리 -->
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <!-- slick slider -->
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    cs
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -65,12 +61,12 @@
                     <a href="./subpage/subpage2.html">나의 곡 / 아티스트</a>
                   </li>
                   <li>
-                    <a href="./subpage/subpage2.html">나의 플레이리스트</a>
+                    <a href="./subpage/subpage3.html">나의 플레이리스트</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#">커뮤니티</a>
+                <a href="#">고객센터</a>
                 <ul class="submenu">
                   <li><a href="#">공지사항</a></li>
                   <li><a href="#">문의</a></li>
@@ -489,37 +485,59 @@
               <p>새로 나온 앨범</p>
               <img src="./img/main/right_angle.svg" alt="icon" />
             </a>
-            <div class="album_con">
-              <div id="slider-div">
-                <div class="slider_card">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
                   <a class="album_img">
                     <img src="./img/main/album1.jpg" alt="album" />
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <a href="#"><h3>はいよろこんで</h3></a>
                   <a href="#"><p>Kocchi no Kento</p></a>
                 </div>
-                <div class="slider_card">
+                <div class="swiper-slide">
                   <a href="#" class="album_img">
                     <img src="./img/main/album2.jpg" alt="album" />
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <a href="#"><h3>UNITY</h3></a>
                   <a href="#"><p>Saegusa Akina</p></a>
                 </div>
-                <div class="slider_card">
+                <div class="swiper-slide">
                   <a class="album_img">
                     <img src="./img/main/album3.jpg" alt="album" />
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <a href="#"><h3>晩餐歌</h3></a>
                   <a href="#"><p>tuki.</p></a>
                 </div>
-                <div class="slider_card">
+                <div class="swiper-slide">
                   <a class="album_img">
                     <img src="./img/main/album3.jpg" alt="album" />
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <a href="#"><h3>晩餐歌</h3></a>
                   <a href="#"><p>tuki.</p></a>
                 </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
         </section>
@@ -537,7 +555,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular1.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">fake face dance music</a>
@@ -550,7 +572,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular2.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">恋風邪にのせて</a>
@@ -563,7 +589,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular3.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">UNDEAD</a>
@@ -576,7 +606,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular4.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">I love...</a>
@@ -589,7 +623,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular5.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">死ぬのがいいわ</a>
@@ -602,7 +640,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular6.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">オトノケ - Otonoke</a>
@@ -615,7 +657,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular7.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">天体観測</a>
@@ -628,7 +674,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular8.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">恋人ごっこ</a>
@@ -641,7 +691,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular9.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">逆光 - replica -</a>
@@ -654,7 +708,11 @@
                 <div class="popular_con">
                   <a href="#" class="popular_img">
                     <img src="./img/main/popular10.jpg" alt="popular" />
-                    <i class="xi-play xi-4x"></i>
+                    <img
+                      class="play_icon"
+                      src="./img/main/play.svg"
+                      alt="icon"
+                    />
                   </a>
                   <div class="text_box">
                     <a href="#">IN_MY_HEAD</a>
@@ -677,7 +735,7 @@
               <div class="play_box">
                 <a href="#"
                   ><img src="./img/main/play1.jpg" alt="playlist" />
-                  <i class="xi-play xi-3x"></i>
+                  <img class="play_icon" src="./img/main/play.svg" alt="icon" />
                 </a>
                 <div class="play_right">
                   <div class="top_con">
@@ -711,7 +769,7 @@
               <div class="play_box">
                 <a href="#"
                   ><img src="./img/main/play2.jpg" alt="playlist" />
-                  <i class="xi-play xi-3x"></i>
+                  <img class="play_icon" src="./img/main/play.svg" alt="icon" />
                 </a>
                 <div class="play_right">
                   <div class="top_con">
@@ -745,7 +803,7 @@
               <div class="play_box">
                 <a href="#"
                   ><img src="./img/main/play3.jpg" alt="playlist" />
-                  <i class="xi-play xi-3x"></i>
+                  <img class="play_icon" src="./img/main/play.svg" alt="icon" />
                 </a>
                 <div class="play_right">
                   <div class="top_con">
@@ -779,7 +837,7 @@
               <div class="play_box">
                 <a href="#"
                   ><img src="./img/main/play4.jpg" alt="playlist" />
-                  <i class="xi-play xi-3x"></i>
+                  <img class="play_icon" src="./img/main/play.svg" alt="icon" />
                 </a>
                 <div class="play_right">
                   <div class="top_con">
@@ -813,7 +871,7 @@
               <div class="play_box">
                 <a href="#"
                   ><img src="./img/main/play5.jpg" alt="playlist" />
-                  <i class="xi-play xi-3x"></i>
+                  <img class="play_icon" src="./img/main/play.svg" alt="icon" />
                 </a>
                 <div class="play_right">
                   <div class="top_con">
@@ -847,7 +905,7 @@
               <div class="play_box">
                 <a href="#"
                   ><img src="./img/main/play6.jpg" alt="playlist" />
-                  <i class="xi-play xi-3x"></i>
+                  <img class="play_icon" src="./img/main/play.svg" alt="icon" />
                 </a>
                 <div class="play_right">
                   <div class="top_con">
@@ -943,33 +1001,25 @@
       </footer>
     </div>
 
+    <!-- Initialize Swiper -->
     <script>
-      $(document).ready(function () {
-        $("#slider-div").slick({
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 3,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: "40px",
-                slidesToShow: 3,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: "40px",
-                slidesToShow: 1,
-              },
-            },
-          ],
-        });
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: "3",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
     </script>
   </body>
