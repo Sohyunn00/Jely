@@ -321,7 +321,7 @@ main .main_visual {
   bottom: 15vh;
   opacity: 1;
 }
-/* 앨범 슬라이드 애니메이션 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
+/* 앨범 슬라이드 섹션 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
 #sec1 .con {
   width: 100%;
   height: fit-content;
@@ -802,7 +802,7 @@ main .main_visual {
 .swiper-slide h3 {
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   transition: 0.3s;
 }
 .swiper-slide p {
@@ -1039,6 +1039,9 @@ main .main_visual {
 .bottom_con > a {
   font-size: 18px;
   color: var(--sub-text-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .bottom_con a:hover {
   text-decoration: underline;
@@ -1186,6 +1189,9 @@ footer .con {
   gap: 20px;
   border-top: 1px solid var(--opacity20-color);
   box-sizing: border-box;
+}
+footer .con > a {
+  height: 100%;
 }
 footer .con > a img {
   filter: grayscale(1);

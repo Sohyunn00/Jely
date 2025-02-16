@@ -58,10 +58,14 @@ section .con {
 .official_wrap .official a {
   font-weight: 400;
   display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .official_wrap .official p {
   font-size: 18px;
   color: var(--sub-text-color);
+  text-align: end;
 }
 /* 자주 묻는 질문 */
 .sec2 .question_wrap {
@@ -90,7 +94,7 @@ section .con {
   cursor: pointer;
 }
 .question_wrap .question_box img {
-  width: 15%;
+  width: 34px;
 }
 .question_wrap .question_box:hover {
   background-color: #fff;

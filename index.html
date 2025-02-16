@@ -68,8 +68,8 @@
               <li>
                 <a href="#">고객센터</a>
                 <ul class="submenu">
-                  <li><a href="#">공지사항</a></li>
-                  <li><a href="#">문의</a></li>
+                  <li><a href="./subpage/subpage4.html">공지사항</a></li>
+                  <li><a href="./subpage/subpage4.html">문의</a></li>
                 </ul>
               </li>
             </ul>
@@ -119,11 +119,6 @@
                 alt="장르"
               />
               <img class="genre_ani" src="./img/main/genre7.png" alt="장르" />
-            </div>
-            <div class="scroll_down">
-              <a href="#sec1">
-                <i class="xi-angle-down-thin xi-4x"></i>
-              </a>
             </div>
           </div>
         </section>
@@ -1019,6 +1014,14 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 3,
+          },
         },
       });
     </script>

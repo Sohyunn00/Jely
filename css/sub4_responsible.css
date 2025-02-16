@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* 모바일-sm 🥦🥦🥦🥦 */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  section .con {
+    margin: 80px auto;
+  }
+  /*공지사항🌎🌎🌎 */
+  .con .sub4_title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .sec1 .con .sub4_title {
+    margin-bottom: 20px;
+  }
+  .sec1 .official_box {
+    width: 90%;
+  }
+  .official_box .more {
+    margin-bottom: 4px;
+  }
+  .official_box .more a {
+    font-size: 12px;
+  }
+  .official_box .more a img {
+    width: 20px;
+    height: auto;
+  }
+  .official_wrap .official {
+    font-size: 12px;
+    padding: 10px 0;
+    gap: 10px;
+  }
+  .official_wrap .official a {
+    width: 70%;
+  }
+  .official_wrap .official p {
+    font-size: 12px;
+    width: 30%;
+  }
+  /* 자주 묻는 질문 🌎🌎🌎  */
+  .sec2 .question_wrap {
+    width: 90%;
+    display: block;
+  }
+  .sec2 .question_wrap .question_box {
+    width: fit-content;
+    padding: 4px 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .question_wrap .question_box p {
+    width: fit-content;
+    font-size: 14px;
+    line-height: 2;
+  }
+  /* 문의하기 🌎🌎🌎  */
+  .sec3 .QA_con {
+    display: block;
+  }
+  .QA_con .QA_left {
+    width: 100%;
+  }
+  .QA_con .QA_left p {
+    font-size: 12px;
+    line-height: 1.8;
+    padding: 0;
+    padding-left: 10px;
+  }
+  .QA_con .QA_right {
+    width: 100%;
+  }
+  .QA_right .QA_box {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .QA_con .QA_right textarea {
+    font-size: 12px;
+    padding: 14px;
+    height: 200px;
+  }
+  .QA_con .QA_right button {
+    font-size: 12px;
+    padding: 4px 12px;
+    margin: 14px;
+  }
+}
+/* 모바일-lg 🥦🥦🥦🥦 */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  section .con {
+    margin: 80px auto;
+  }
+  /*공지사항🌎🌎🌎 */
+  .con .sub4_title {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+  .sec1 .con .sub4_title {
+    margin-bottom: 20px;
+  }
+  .sec1 .official_box {
+    width: 80%;
+  }
+  .official_box .more {
+    margin-bottom: 4px;
+  }
+  .official_box .more a {
+    font-size: 12px;
+  }
+  .official_box .more a img {
+    width: 16px;
+    height: auto;
+  }
+  .official_wrap .official {
+    font-size: 14px;
+    padding: 14px 0;
+    gap: 10px;
+  }
+  .official_wrap .official a {
+    width: 70%;
+  }
+  .official_wrap .official p {
+    font-size: 14px;
+    width: 30%;
+  }
+  /* 자주 묻는 질문 🌎🌎🌎  */
+  .sec2 .question_wrap {
+    width: 90%;
+  }
+  .sec2 .question_wrap .question_box {
+    width: fit-content;
+    padding: 4px 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .question_wrap .question_box p {
+    width: fit-content;
+    font-size: 14px;
+    line-height: 2;
+  }
+  .question_wrap .question_box img {
+    width: 26px;
+  }
+  /* 문의하기 🌎🌎🌎  */
+  .sec3 .QA_con {
+    display: block;
+  }
+  .QA_con .QA_left {
+    width: 100%;
+  }
+  .QA_con .QA_left p {
+    font-size: 12px;
+    line-height: 1.8;
+    padding: 0;
+    padding-left: 20px;
+  }
+  .QA_con .QA_right {
+    width: 70%;
+  }
+  .QA_right .QA_box {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .QA_con .QA_right textarea {
+    font-size: 12px;
+    padding: 14px;
+    height: 200px;
+  }
+  .QA_con .QA_right button {
+    font-size: 12px;
+    padding: 4px 12px;
+    margin: 14px;
+  }
+}
+/* 태블릿-sm 🥦🥦🥦🥦 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .con {
+    margin: 100px auto;
+  }
+  /*공지사항🌎🌎🌎 */
+  .con .sub4_title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .sec1 .con .sub4_title {
+    margin-bottom: 20px;
+  }
+  .sec1 .official_box {
+    width: 70%;
+  }
+  .official_box .more {
+    margin-bottom: 4px;
+  }
+  .official_box .more a {
+    font-size: 14px;
+  }
+  .official_box .more a img {
+    width: 20px;
+    height: auto;
+  }
+  .official_wrap .official {
+    font-size: 16px;
+    padding: 18px 0;
+    gap: 10px;
+  }
+  .official_wrap .official a {
+    width: 70%;
+  }
+  .official_wrap .official p {
+    font-size: 16px;
+    width: 30%;
+  }
+  /* 자주 묻는 질문 */
+  .sec2 .question_wrap {
+    width: 80%;
+  }
+  .question_wrap .question_box p {
+    width: fit-content;
+    font-size: 16px;
+  }
+  .question_wrap .question_box img {
+    width: 30px;
+  }
+  /* 문의하기 */
+  .QA_con .QA_left {
+    width: 50%;
+  }
+  .QA_con .QA_right {
+    width: 50%;
+  }
+  .QA_con .QA_left p {
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 20px;
+  }
+  .QA_right .QA_box {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .QA_con .QA_right textarea {
+    height: 260px;
+    font-size: 14px;
+  }
+  .QA_con .QA_right button {
+    font-size: 14px;
+    padding: 4px 12px;
+  }
+}
+/* 태블릿-lg 🥦🥦🥦🥦 */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  section .con {
+    margin: 140px auto;
+  }
+  /*공지사항🌎🌎🌎 */
+  .con .sub4_title {
+    font-size: 26px;
+    margin-bottom: 80px;
+  }
+  .sec1 .con .sub4_title {
+    margin-bottom: 40px;
+  }
+  .sec1 .official_box {
+    width: 70%;
+  }
+  .official_box .more {
+    margin-bottom: 4px;
+  }
+  .official_box .more a {
+    font-size: 16px;
+  }
+  .official_box .more a img {
+    width: 24px;
+    height: auto;
+  }
+  .official_wrap .official {
+    font-size: 18px;
+    padding: 20px 0;
+  }
+  .official_wrap .official a {
+    width: 80%;
+  }
+  .official_wrap .official p {
+    font-size: 18px;
+    width: 20%;
+  }
+  /* 자주 묻는 질문 */
+  .sec2 .question_wrap {
+    width: 80%;
+  }
+  .question_wrap .question_box p {
+    width: fit-content;
+    font-size: 18px;
+  }
+  .question_wrap .question_box img {
+    width: 32px;
+  }
+  /* 문의하기 */
+  .QA_con .QA_left {
+    width: 50%;
+  }
+  .QA_con .QA_right {
+    width: 50%;
+  }
+  .QA_con .QA_left p {
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 40px;
+  }
+  .QA_right .QA_box {
+    width: 80%;
+    position: relative;
+  }
+  .QA_con .QA_right textarea {
+    height: 260px;
+    font-size: 14px;
+  }
+  .QA_con .QA_right button {
+    font-size: 16px;
+    padding: 4px 14px;
+  }
+}
