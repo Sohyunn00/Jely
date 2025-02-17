@@ -211,6 +211,9 @@ input[type="range"]::-webkit-slider-thumb {
   font-weight: 300;
   cursor: default;
 }
+.right_icons .search_wrap img {
+  width: 20px;
+}
 input[type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-results-button {
   display: none; /* X 버튼 및 검색 결과 버튼 숨기기 */
@@ -222,7 +225,7 @@ input[type="search"] {
   background: transparent;
   line-height: 34px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
 }
 /* 햄버거 메뉴 */
 .con .hamburger_menu {
@@ -251,10 +254,6 @@ input[type="search"] {
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-.ham_search button img {
-  width: 100%;
-  height: auto;
 }
 .hamburger_menu ul {
   font-size: 18px;
