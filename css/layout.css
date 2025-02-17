@@ -224,6 +224,55 @@ input[type="search"] {
   color: #fff;
   font-size: 20px;
 }
+/* 햄버거 메뉴 */
+.con .hamburger_menu {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  right: 0;
+  top: 5vh;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+}
+.hamburger_menu .ham_search {
+  width: 100%;
+  display: flex;
+}
+.ham_search input[type="search"] {
+  width: 80%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.ham_search button {
+  width: 20%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.ham_search button img {
+  width: 100%;
+  height: auto;
+}
+.hamburger_menu ul {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 2;
+  color: var(--main-color);
+  cursor: default;
+  margin-bottom: 10px;
+}
+.hamburger_menu ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: 0.3s;
+}
+.hamburger_menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 /* 메인비주얼 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
 main .main_visual {
   width: 100%;
