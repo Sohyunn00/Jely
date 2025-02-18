@@ -12,7 +12,63 @@
       <header></header>
       <main>
         <div class="con">
-          <div class="login_form"></div>
+          <a href="../index.html"
+            ><img src="../img/main/logo.png" alt="logo"
+          /></a>
+          <!-- 회원가입 폼 -->
+          <form action="#" method="post" autocomplete="on">
+            <!-- 아이디 -->
+            <div class="input_box">
+              <label for="user_id">
+                <input
+                  type="text"
+                  name="user_id"
+                  id="user_id"
+                  required
+                  placeholder="아이디"
+                  minlength="5"
+                  maxlength="12"
+                  autofocus
+                />
+              </label>
+            </div>
+            <!-- 비밀번호 -->
+            <div class="input_box">
+              <label for="user_pw">
+                <input
+                  type="password"
+                  name="user_pw"
+                  id="user_pw"
+                  required
+                  placeholder="비밀번호"
+                  minlength="6"
+                  maxlength="10"
+                />
+              </label>
+            </div>
+            <!-- 체크박스 -->
+            <div class="check_box">
+              <input type="checkbox" name="체크박스" checked />
+              <label for="join_toggle">로그인 상태 유지</label>
+            </div>
+            <!-- 로그인 버튼 -->
+            <div class="login_btn">
+              <button rel="#" type="submit">로그인</button>
+            </div>
+            <!-- 계정 찾기, 회원가입 -->
+            <div class="info_search">
+              <a href="#">아이디 찾기</a>
+              <a href="#">비밀번호 찾기</a>
+              <a href="#">회원가입</a>
+            </div>
+            <!-- sns 연동 로그인 -->
+            <div class="sns_btn">
+              <a href="#"><img src="../img/login/apple.svg" alt="sns" /></a>
+              <a href="#"><img src="../img/login/naver.svg" alt="sns" /></a>
+              <a href="#"><img src="../img/login/kakao.svg" alt="sns" /></a>
+              <a href="#"><img src="../img/login/google.svg" alt="sns" /></a>
+            </div>
+          </form>
         </div>
       </main>
       <footer></footer>
