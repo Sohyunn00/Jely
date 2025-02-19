@@ -4,15 +4,15 @@
   .container {
     padding-top: 120px;
   }
-  .con {
+  main .con {
     width: 90%;
     margin: 0 auto;
     padding: 20px 0;
   }
-  .con > a {
+  main .con > a {
     margin: 0 auto;
   }
-  .con > a img {
+  main .con > a img {
     width: 80px;
   }
   form {
@@ -59,15 +59,15 @@
   .container {
     padding-top: 140px;
   }
-  .con {
+  main .con {
     width: 70%;
     margin: 0 auto;
     padding: 20px 0;
   }
-  .con > a {
+  main .con > a {
     margin: 0 auto;
   }
-  .con > a img {
+  main .con > a img {
     width: 80px;
   }
   form {
@@ -115,12 +115,12 @@
   .container {
     padding-top: 160px;
   }
-  .con {
+  main .con {
     width: 50%;
     margin: 0 auto;
     padding: 20px 0;
   }
-  .con > a img {
+  main .con > a img {
     width: 100px;
   }
   form {
@@ -168,12 +168,12 @@
   .container {
     padding-top: 180px;
   }
-  .con {
+  main .con {
     width: 40%;
     margin: 0 auto;
     padding: 40px 0;
   }
-  .con > a img {
+  main .con > a img {
     width: 100px;
   }
   .input_box input {
@@ -198,7 +198,7 @@
 }
 /* 노트북 🥦🥦🥦🥦 */
 @media screen and (min-width: 1441px) and (max-width: 1700px) {
-  .con {
+  main .con {
     width: 35%;
     margin: 0 auto;
     padding: 40px 0;

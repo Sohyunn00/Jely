@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jely</title>
+    <!-- css -->
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/responsible.css" />
+    <!-- common -->
+    <link rel="stylesheet" href="./common/common.css" />
+    <link rel="stylesheet" href="./common/common_responsible.css" />
     <!-- 제이쿼리 -->
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Link Swiper's CSS -->
@@ -15,6 +19,12 @@
     />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"
+      integrity="sha512-jKxp7JHEN6peEmzmg6a7XJBORNTB0ITD2Pi+6FUkc16PCaNAJX2ahZ1ejn1p1uY37Pxyirn/0OMNZbITbEg3jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -23,23 +33,23 @@
         <div class="con">
           <!-- 로고 -->
           <h1>
-            <a href="./index.html"
-              ><img src="./img/main/header_logo.png" alt="로고"
+            <a href="/"
+              ><img src="./common/img/header_logo.png" alt="로고"
             /></a>
           </h1>
           <!-- 플레이어 -->
           <div class="player">
             <a href="#"
-              ><img src="./img/main/header_thumb.jpg" alt="썸네일"
+              ><img src="./common/img/header_thumb.jpg" alt="썸네일"
             /></a>
             <div class="text_wrap">
               <a href="#">Lilac</a>
               <a href="#">MRS. GREEN APPLE</a>
             </div>
             <div class="icon_wrap">
-              <a href="#"><img src="./img/main/rewind.svg" alt="icon" /></a>
-              <a href="#"><img src="./img/main/pause.svg" alt="icon" /></a>
-              <a href="#"><img src="./img/main/forward.svg" alt="icon" /></a>
+              <a href="#"><img src="./common/img/rewind.svg" alt="icon" /></a>
+              <a href="#"><img src="./common/img/pause.svg" alt="icon" /></a>
+              <a href="#"><img src="./common/img/forward.svg" alt="icon" /></a>
             </div>
           </div>
           <!-- 메뉴 -->
@@ -84,36 +94,40 @@
               <label for="search">
                 <input type="search" name="search" id="search" />
               </label>
-              <a href="#"><img src="./img/main/search.svg" alt="icon" /></a>
+              <a href="#"><img src="./common/img/search.svg" alt="icon" /></a>
               <p>)</p>
             </div>
             <!-- 로그인 -->
-            <a href="#"><img src="./img/main/user.svg" alt="icon" /></a>
+            <a href="./subpage/login.html"
+              ><img src="./common/img/user.svg" alt="icon"
+            /></a>
             <a href="#" class="ham_btn" onclick="return false;"
-              ><img src="./img/main/menu.svg" alt="icon"
+              ><img src="./common/img/menu.svg" alt="icon"
             /></a>
           </div>
           <div class="hamburger_menu">
             <div class="ham_search">
               <input type="search" />
               <button type="button">
-                <img src="./img/main/search.svg" alt="icon" />
+                <img src="./common/img/search.svg" alt="icon" />
               </button>
             </div>
             <ul>
               둘러보기
-              <li><a href="#">새로운 음악 / 인기곡</a></li>
-              <li><a href="#">분위기 / 상황별</a></li>
+              <li>
+                <a href="./subpage/subpage1.html">새로운 음악 / 인기곡</a>
+              </li>
+              <li><a href="./subpage/subpage1.html">분위기 / 상황별</a></li>
             </ul>
             <ul>
               보관함
-              <li><a href="#">나의 곡 / 아티스트</a></li>
-              <li><a href="#">나의 플레이리스트</a></li>
+              <li><a href="./subpage/subpage2.html">나의 곡 / 아티스트</a></li>
+              <li><a href="./subpage/subpage3.html">나의 플레이리스트</a></li>
             </ul>
             <ul>
               고객센터
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">문의</a></li>
+              <li><a href="./subpage/subpage4.html">공지사항</a></li>
+              <li><a href="./subpage/subpage4.html">문의</a></li>
             </ul>
           </div>
         </div>
@@ -1007,7 +1021,7 @@
       <!-- 푸터 -->
       <footer>
         <div class="con">
-          <a href="/"><img src="./img/main/logo.png" alt="logo" /></a>
+          <a href="/"><img src="./common/img/logo.png" alt="logo" /></a>
           <div class="text_wrap">
             <div class="footer_menu">
               <a href="#">이용약관</a>

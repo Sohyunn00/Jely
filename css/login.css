@@ -21,8 +21,12 @@ body {
   width: 100%;
 }
 .container {
+  height: 100%;
   padding-top: 200px;
   box-sizing: border-box;
+}
+main {
+  height: 100%;
 }
 .con {
   width: 30%;
@@ -32,7 +36,7 @@ body {
   padding: 60px 0;
   box-sizing: border-box;
 }
-.con > a {
+main .con > a {
   width: fit-content;
   display: block;
   margin: 0 auto;
@@ -121,6 +125,6 @@ form .sns_btn {
 }
 .sns_btn a:first-child {
   border-radius: 100%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   box-sizing: border-box;
 }

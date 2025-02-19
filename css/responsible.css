@@ -1,58 +1,6 @@
 @charset "utf-8";
 /* 모바일-sm 🥦🥦🥦🥦🥦🥦🥦🥦🥦 */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  :is(.player, #gnb, input[type="range"], .search_wrap) {
-    display: none;
-  }
-  /* 헤더 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
-  header .con {
-    width: 95%;
-    padding: 0 14px;
-    box-sizing: border-box;
-  }
-  header h1 img {
-    width: 46px;
-  }
-  .con > .right_icons {
-    gap: 14px;
-  }
-  .right_icons > a:last-child {
-    display: block;
-  }
-  .right_icons a {
-    display: flex;
-    align-items: center;
-  }
-  .right_icons a img {
-    width: 18px;
-  }
-  .con .hamburger_menu {
-    width: 50%;
-    padding: 10px;
-    padding-left: 20px;
-  }
-  .ham_search input[type="search"] {
-    width: 75%;
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  .ham_search button {
-    width: 25%;
-  }
-  .ham_search button img {
-    width: 26px;
-    height: auto;
-  }
-  .hamburger_menu ul {
-    font-size: clamp(14px, 4vw, 16px);
-    line-height: 2;
-    margin-bottom: 6px;
-  }
-  .hamburger_menu ul li {
-    font-size: clamp(12px, 4vw, 14px);
-    line-height: 1.5;
-  }
   /* 메인비주얼 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
   .main_visual .con .genre_wrap {
     display: none;
@@ -458,68 +406,9 @@
   .sec8 .con > a > img {
     width: 20px;
   }
-  /* 푸터 🍅🍅🍅🍅🍅🍅🍅🍅🍅 */
-  footer .con {
-    width: 100%;
-    height: 60px;
-    padding: 0 10px;
-    gap: 4px;
-  }
-  footer .con > a img {
-    width: 60px;
-    height: auto;
-  }
-  .footer_menu {
-    gap: 10px;
-    margin-bottom: 6px;
-  }
 }
 /* 모바일-lg 🥦🥦🥦🥦🥦🥦🥦🥦🥦 */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  /* 헤더 🍅🍅🍅 */
-  :is(.player, #gnb, input[type="range"], .search_wrap) {
-    display: none;
-  }
-  header .con {
-    width: 95%;
-    height: 4vh;
-  }
-  header h1 img {
-    width: 48px;
-  }
-  .right_icons a img {
-    width: 20px;
-  }
-  .right_icons > a:last-child {
-    display: block;
-  }
-  .con .hamburger_menu {
-    width: 40%;
-    padding: 10px;
-    padding-left: 20px;
-  }
-  .ham_search input[type="search"] {
-    width: 75%;
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  .ham_search button {
-    width: 25%;
-  }
-  .ham_search button img {
-    width: 28px;
-    height: auto;
-  }
-  .hamburger_menu ul {
-    font-size: clamp(16px, 2vw, 18px);
-    line-height: 2;
-    margin-bottom: 6px;
-  }
-  .hamburger_menu ul li {
-    font-size: clamp(14px, 2vw, 16px);
-    line-height: 1.5;
-  }
   /* 메인비주얼 🍅🍅🍅 */
   .main_visual .con .genre_wrap {
     display: none;
@@ -902,74 +791,9 @@
   .sec8 .con > a img {
     width: 24px;
   }
-  /* 푸터 🍅🍅🍅 */
-  footer .con {
-    height: 80px;
-  }
-  footer .con > a img {
-    width: 90px;
-    height: auto;
-  }
-  footer .con .text_wrap {
-    font-size: 12px;
-    color: var(--sub-text-color);
-  }
 }
 /* 태블릿-sm 🥦🥦🥦🥦🥦🥦🥦🥦🥦 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* 헤더 🍅🍅🍅 */
-  :is(.player, #gnb, input[type="range"]) {
-    display: none;
-  }
-  .right_icons .search_wrap {
-    display: flex;
-  }
-  header h1 img {
-    width: 48px;
-  }
-  header .con {
-    width: 95vw;
-    height: 4vh;
-  }
-  .right_icons > a:last-child {
-    display: block;
-  }
-  .right_icons a img {
-    width: 18px;
-  }
-  .right_icons .search_wrap img {
-    width: 16px;
-  }
-  .hamburger_menu .ham_search {
-    display: none;
-  }
-  .con .hamburger_menu {
-    width: 30%;
-    padding: 10px;
-    padding-left: 20px;
-  }
-  .ham_search input[type="search"] {
-    width: 75%;
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  .ham_search button {
-    width: 25%;
-  }
-  .ham_search button img {
-    width: 28px;
-    height: auto;
-  }
-  .hamburger_menu ul {
-    font-size: clamp(16px, 2vw, 18px);
-    line-height: 2;
-    margin-bottom: 6px;
-  }
-  .hamburger_menu ul li {
-    font-size: clamp(14px, 2vw, 16px);
-    line-height: 1.5;
-  }
   /* 메인비주얼 🍅🍅🍅 */
   .main_visual .con .genre_wrap {
     display: none;
@@ -1351,18 +1175,6 @@
   .sec8 .con > a img {
     width: 24px;
   }
-  /* 푸터 🍅🍅🍅 */
-  footer .con {
-    height: 80px;
-  }
-  footer .con > a img {
-    width: 90px;
-    height: auto;
-  }
-  footer .con .text_wrap {
-    font-size: 12px;
-    color: var(--sub-text-color);
-  }
 }
 @media screen and (min-width: 947px) and (max-width: 1024px) {
   :is(.popular_box:nth-child(9), .popular_box:nth-child(10)) {
@@ -1388,53 +1200,6 @@
 }
 /* 태블릿-lg 🥦🥦🥦🥦🥦🥦🥦🥦🥦 */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-  /* 헤더 🍅🍅🍅 */
-  :is(.player, #gnb, input[type="range"], .search_wrap) {
-    display: none;
-  }
-  .right_icons > a:last-child {
-    display: none;
-  }
-  :is(#gnb, .search_wrap) {
-    display: flex;
-  }
-  header h1 {
-    width: 55px;
-  }
-  #gnb {
-    width: fit-content;
-    padding-left: 40px;
-  }
-  #gnb > ul {
-    gap: 10px;
-  }
-  #gnb > ul > li {
-    font-size: 16px;
-  }
-  .submenu {
-    width: 150px;
-  }
-  .submenu li {
-    font-size: 14px;
-    line-height: 36px;
-  }
-  .submenu li:hover a {
-    font-size: 15px;
-    font-weight: 500;
-    box-sizing: border-box;
-  }
-  input[type="search"] {
-    width: 120px;
-  }
-  .right_icons .search_wrap p {
-    font-size: 20px;
-  }
-  .right_icons a img {
-    width: 20px;
-  }
-  .con .hamburger_menu {
-    display: none;
-  }
   /* 메인비주얼 🍅🍅🍅 */
   .main_visual .con .genre_wrap {
     display: none;
@@ -1787,39 +1552,9 @@
     font-size: 16px;
     align-items: center;
   }
-  /* 푸터 🍅🍅🍅*/
-  footer .con {
-    height: 90px;
-  }
-  footer .con > a img {
-    width: 90px;
-    height: auto;
-  }
-  footer .con .text_wrap {
-    font-size: 14px;
-  }
 }
 /* 노트북 🥦🥦🥦🥦🥦🥦🥦🥦🥦 */
 @media screen and (min-width: 1441px) and (max-width: 1700px) {
-  /* 헤더 🍅🍅🍅*/
-  .player {
-    display: flex;
-  }
-  header .con {
-    width: 95vw;
-  }
-  .con .player {
-    width: fit-content;
-  }
-  input[type="search"] {
-    width: 120px;
-  }
-  #gnb > ul {
-    gap: 4px;
-  }
-  .right_icons > a i {
-    font-size: 30px;
-  }
   /* 메인비주얼 🍅🍅🍅 */
   .genre_wrap {
     display: flex;
