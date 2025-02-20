@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
-@import url("./reset.css");
+@import url("../css/reset.css");
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
@@ -62,9 +62,14 @@ section .con {
   border-radius: 4px;
   overflow: hidden;
 }
+.swiper .slide_wrap .slide > a:hover img {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
 .swiper .slide_wrap .slide img {
   width: 100%;
   height: auto;
+  transition: 0.3s;
 }
 .swiper .slide_wrap .slide .slide_text {
   width: 100%;
@@ -189,7 +194,10 @@ section .con {
   box-sizing: border-box;
   display: block;
   border-radius: 8px;
-  background: linear-gradient(to bottom right, blue, pink);
+  transition: 0.3s;
+}
+.sec3 .genre_row > a:hover {
+  filter: hue-rotate(180deg);
 }
 .sec3 .genre_row > a:after {
   content: "";
@@ -215,4 +223,34 @@ section .con {
 .genre_row > a .text p:last-child {
   text-align: end;
   font-weight: 400;
+}
+.sec3 .genre_row:first-child > a:nth-child(1) {
+  background: linear-gradient(to bottom right, #87ef8e, #4eafff);
+}
+.sec3 .genre_row:first-child > a:nth-child(2) {
+  background: linear-gradient(to bottom right, #8ec88b, #8f6139);
+}
+.sec3 .genre_row:first-child > a:nth-child(3) {
+  background: linear-gradient(to bottom right, #743ba0, #114b7a);
+}
+.sec3 .genre_row:first-child > a:nth-child(4) {
+  background: linear-gradient(to bottom right, #8acbd2, #d686b9);
+}
+.sec3 .genre_row:first-child > a:nth-child(5) {
+  background: linear-gradient(to bottom right, #dac3a8, #834d1e);
+}
+.sec3 .genre_row:last-child > a:nth-child(1) {
+  background: linear-gradient(to bottom right, #f021c3, #eaf122);
+}
+.sec3 .genre_row:last-child > a:nth-child(2) {
+  background: linear-gradient(to bottom right, #e1563e, #439ca6);
+}
+.sec3 .genre_row:last-child > a:nth-child(3) {
+  background: linear-gradient(to bottom right, #58f1fc, #e11e32);
+}
+.sec3 .genre_row:last-child > a:nth-child(4) {
+  background: linear-gradient(to bottom right, #647a80, #122f64);
+}
+.sec3 .genre_row:last-child > a:nth-child(5) {
+  background: linear-gradient(to bottom right, #fbfb97, #4da0ff);
 }
