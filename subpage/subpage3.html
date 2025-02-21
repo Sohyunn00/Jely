@@ -40,37 +40,21 @@
           </div>
           <!-- 메뉴 -->
           <nav id="gnb">
-            <ul>
-              <li>
-                <a href="#">둘러보기</a>
-                <ul class="submenu">
-                  <li>
-                    <a href="./subpage1.html">새로운 음악 / 인기곡</a>
-                  </li>
-                  <li>
-                    <a href="./subpage1.html">분위기 / 상황별</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">보관함</a>
-                <ul class="submenu">
-                  <li>
-                    <a href="./subpage2.html">나의 곡 / 아티스트</a>
-                  </li>
-                  <li>
-                    <a href="./subpage3.html">나의 플레이리스트</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">고객센터</a>
-                <ul class="submenu">
-                  <li><a href="./subpage4.html">공지사항</a></li>
-                  <li><a href="./subpage4.html">문의</a></li>
-                </ul>
-              </li>
-            </ul>
+            <div class="menu">
+              <a href="#">둘러보기</a>
+              <a href="#">보관함</a>
+              <a href="#">고객센터</a>
+            </div>
+            <div class="submenu">
+              <a href="./subpage1.html">새로운 음악 / 인기곡</a>
+              <a href="./subpage1.html">분위기 / 상황별</a>
+              <p>•</p>
+              <a href="./subpage2.html">나의 곡 / 아티스트</a>
+              <a href="./subpage3.html">나의 플레이리스트</a>
+              <p>•</p>
+              <a href="./subpage4.html">공지사항</a>
+              <a href="./subpage4.html">문의</a>
+            </div>
           </nav>
           <!-- 볼륨 컨트롤러 -->
           <input type="range" />
@@ -93,33 +77,37 @@
               ><img src="../common/img/menu.svg" alt="icon"
             /></a>
           </div>
-          <div class="hamburger_menu">
-            <div class="ham_search">
-              <input type="search" />
-              <button type="button">
-                <img src="../common/img/search.svg" alt="icon" />
-              </button>
-            </div>
-            <ul>
-              둘러보기
-              <li>
-                <a href="./subpage1.html">새로운 음악 / 인기곡</a>
-              </li>
-              <li><a href="./subpage1.html">분위기 / 상황별</a></li>
-            </ul>
-            <ul>
-              보관함
-              <li><a href="./subpage2.html">나의 곡 / 아티스트</a></li>
-              <li><a href="./subpage3.html">나의 플레이리스트</a></li>
-            </ul>
-            <ul>
-              고객센터
-              <li><a href="./subpage4.html">공지사항</a></li>
-              <li><a href="./subpage4.html">문의</a></li>
-            </ul>
-          </div>
         </div>
       </header>
+      <!-- 햄버거 -->
+      <div class="hamburger_menu">
+        <div class="ham_con">
+          <a href="#"><img src="../common/img/X.svg" alt="" /></a>
+          <div class="ham_search">
+            <input type="search" />
+            <button type="button">
+              <img src="../common/img/search.svg" alt="icon" />
+            </button>
+          </div>
+          <ul>
+            둘러보기
+            <li>
+              <a href="./subpage1.html">새로운 음악 / 인기곡</a>
+            </li>
+            <li><a href="./subpage1.html">분위기 / 상황별</a></li>
+          </ul>
+          <ul>
+            보관함
+            <li><a href="./subpage2.html">나의 곡 / 아티스트</a></li>
+            <li><a href="./subpage3.html">나의 플레이리스트</a></li>
+          </ul>
+          <ul>
+            고객센터
+            <li><a href="./subpage4.html">공지사항</a></li>
+            <li><a href="./subpage4.html">문의</a></li>
+          </ul>
+        </div>
+      </div>
       <main>
         <!-- 상단 메뉴 섹션 -->
         <section class="sec1">

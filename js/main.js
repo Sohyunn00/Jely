@@ -18,6 +18,12 @@ $(function () {
     $(".hamburger_menu").slideToggle(400);
   });
 });
+$(function () {
+  $(".ham_con > a").on("click", function (e) {
+    e.preventDefault();
+    $(".hamburger_menu").slideToggle(400);
+  });
+});
 
 // 화면 크기가 변경될 때 메뉴 자동 닫기
 window.addEventListener("resize", () => {
