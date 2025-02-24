@@ -12,16 +12,26 @@ const hamburgerMenu = document.querySelector(".hamburger_menu");
 
 // hamburgerBtn.addEventListener("click", hamburgerOn);
 
+// $(".ham_con > a").click(function (e) {
+//   e.preventDefault();
+//   $(".hamburger_menu").addClass("on");
+// });
+
+// $(".ham_con > a").click(function (e) {
+//   e.preventDefault();
+//   $(".hamburger_menu").removeClass("on");
+// });
+
 $(function () {
   $(".ham_btn").on("click", function (e) {
     e.preventDefault();
-    $(".hamburger_menu").slideToggle(400);
+    $(".hamburger_menu").toggleClass("on");
   });
 });
 $(function () {
   $(".ham_con > a").on("click", function (e) {
     e.preventDefault();
-    $(".hamburger_menu").slideToggle(400);
+    $(".hamburger_menu").toggleClass("on");
   });
 });
 

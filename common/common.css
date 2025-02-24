@@ -103,6 +103,8 @@ header .con {
 }
 #gnb:hover .submenu {
   height: 44px;
+  opacity: 1;
+  border: 1px solid var(--opacity10-color);
 }
 .submenu {
   width: 100%;
@@ -112,7 +114,8 @@ header .con {
   overflow: hidden;
   margin-top: 10px;
   transition: 0.5s;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(255, 0, 111, 0.4); */
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -120,16 +123,7 @@ header .con {
   padding: 6px;
   box-sizing: border-box;
   border-radius: 50px;
-}
-.submenu::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  backdrop-filter: blur(20px);
+  opacity: 0;
 }
 .submenu a {
   width: fit-content;
@@ -146,7 +140,7 @@ header .con {
   line-height: 32px;
 }
 .submenu a:hover {
-  background-color: rgba(255, 90, 162, 0.2);
+  background-color: rgba(255, 90, 162, 0.7);
 }
 #gnb
   .menu
@@ -238,7 +232,12 @@ input[type="search"] {
   z-index: 1000;
   position: fixed;
   top: 0;
-  display: none;
+  /* display: none; */
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+.container .hamburger_menu.on {
+  transform: translateX(0%);
 }
 .hamburger_menu .ham_con {
   background-color: #000;
