@@ -68,6 +68,9 @@
     gap: 10px;
     margin-bottom: 6px;
   }
+  footer .con .text_wrap {
+    font-size: 10px;
+  }
 }
 /* 모바일-lg 🥦🥦🥦🥦🥦🥦🥦🥦🥦 */
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -206,7 +209,7 @@
   }
   /* 푸터 🍅🍅🍅*/
   footer .con {
-    height: 90px;
+    height: 80px;
   }
   footer .con > a img {
     width: 90px;

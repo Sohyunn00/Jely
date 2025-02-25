@@ -12,7 +12,7 @@ body {
   font-size: 24px;
   font-weight: 300;
   box-sizing: border-box;
-  background: url(../img/main/fee_bg.jpg) no-repeat;
+  background: url(../img/login/bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -28,7 +28,7 @@ body {
 main {
   height: auto;
 }
-.con {
+main .con {
   width: 30%;
   height: fit-content;
   margin: 0 auto;

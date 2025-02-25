@@ -32,6 +32,7 @@
   }
   .official_wrap .official a {
     width: 70%;
+    line-height: 1.6;
   }
   .official_wrap .official p {
     font-size: 12px;
@@ -39,19 +40,20 @@
   }
   /* 자주 묻는 질문 🌎🌎🌎  */
   .sec2 .question_wrap {
-    width: 90%;
-    display: block;
+    width: 100%;
   }
   .sec2 .question_wrap .question_box {
-    width: fit-content;
+    width: 100%;
     padding: 4px 16px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .question_wrap .question_box p {
     width: fit-content;
     font-size: 14px;
     line-height: 2;
+  }
+  .question_wrap .question_box img {
+    width: 30px;
   }
   /* 문의하기 🌎🌎🌎  */
   .sec3 .QA_con {
@@ -124,25 +126,25 @@
   }
   /* 자주 묻는 질문 🌎🌎🌎  */
   .sec2 .question_wrap {
-    width: 90%;
+    width: 100%;
   }
   .sec2 .question_wrap .question_box {
-    width: fit-content;
+    width: 100%;
     padding: 4px 16px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .question_wrap .question_box p {
     width: fit-content;
     font-size: 14px;
-    line-height: 2;
+    line-height: 2.5;
   }
   .question_wrap .question_box img {
-    width: 26px;
+    width: 30px;
   }
   /* 문의하기 🌎🌎🌎  */
   .sec3 .QA_con {
     display: block;
+    padding-left: 20px;
   }
   .QA_con .QA_left {
     width: 100%;
@@ -218,7 +220,7 @@
     font-size: 16px;
   }
   .question_wrap .question_box img {
-    width: 30px;
+    width: 36px;
   }
   /* 문의하기 */
   .QA_con .QA_left {
@@ -289,10 +291,10 @@
   }
   .question_wrap .question_box p {
     width: fit-content;
-    font-size: 18px;
+    font-size: 20px;
   }
   .question_wrap .question_box img {
-    width: 32px;
+    width: 40px;
   }
   /* 문의하기 */
   .QA_con .QA_left {
