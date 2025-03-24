@@ -291,14 +291,6 @@ input[type="search"] {
   width: 100%;
   height: auto;
 }
-.hamburger_menu ul {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 3;
-  color: var(--main-color);
-  cursor: default;
-  margin-bottom: 10px;
-}
 .hamburger_menu ul li {
   width: fit-content;
   font-size: 18px;
@@ -309,7 +301,16 @@ input[type="search"] {
   border-radius: 50px;
   opacity: 0.6;
 }
-.hamburger_menu ul li:hover {
+.hamburger_menu ul li:first-child {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 3;
+  color: var(--main-color);
+  cursor: default;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+.hamburger_menu ul :not(li:first-child):hover {
   opacity: 1;
   animation: textUp 0.5s ease 0s 1 alternate forwards;
 }
